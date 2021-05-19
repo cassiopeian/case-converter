@@ -1,11 +1,30 @@
+/* GLOBAL */
+
 html {
     font-size: 16;
     box-sizing: border-box;
+    height: -webkit-fill-available;
 }
 * {
     box-sizing: inherit;
 }
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     margin: 0;
     padding: 0;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 1.5rem 2rem;
+}
+#copyright {
+    font-size: .9rem;
+    margin: 0;
 }
