@@ -17,6 +17,16 @@ body {
     padding: 0;
 }
 
+/* MAIN  */
+
+h1 {
+    text-align: center;
+}
+textarea {
+    display: block;
+    margin: 3rem auto;
+}
+
 /* FOOTER */
 
 footer {
