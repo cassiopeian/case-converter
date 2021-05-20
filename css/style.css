@@ -34,6 +34,10 @@ textarea {
     margin: 3rem auto;
     resize: none;
 }
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 0 6px rgb(255, 167, 38);
+}
 
 /* FOOTER */
 
