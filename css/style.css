@@ -21,6 +21,7 @@ body {
 /* MAIN  */
 
 h1 {
+    color: rgb(224, 241, 234);
     text-align: center;
 }
 textarea {
