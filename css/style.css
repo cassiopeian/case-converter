@@ -26,7 +26,13 @@ h1 {
 }
 textarea {
     display: block;
+    height: 350px;
+    width: 60%;
+    border: none;
+    border-radius: 25px;
+    padding: 2rem;
     margin: 3rem auto;
+    resize: none;
 }
 
 /* FOOTER */
