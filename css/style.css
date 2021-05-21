@@ -17,6 +17,12 @@ body {
     padding: 0;
     background-color: rgb(28, 33, 62);
 }
+textarea,
+#copyright {
+    font-family: lieberuth, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* MAIN  */
 
@@ -34,9 +40,6 @@ h1 span {
 }
 textarea {
     display: block;
-    font-family: lieberuth, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.5rem;
     letter-spacing: .05rem;
     color: rgb(82, 82, 82);
