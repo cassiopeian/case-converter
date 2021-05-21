@@ -26,6 +26,12 @@ h1 {
 }
 textarea {
     display: block;
+    font-family: lieberuth, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    color: rgb(82, 82, 82);
     background-color: rgb(236, 236, 236);
     height: 350px;
     width: 60%;
