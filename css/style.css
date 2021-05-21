@@ -21,8 +21,16 @@ body {
 /* MAIN  */
 
 h1 {
-    color: rgb(224, 241, 234);
+    font-family: typeka, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3rem;
+    letter-spacing: .1rem;
     text-align: center;
+    color: rgb(224, 241, 234);
+}
+h1 span {
+    text-transform: uppercase;
 }
 textarea {
     display: block;
