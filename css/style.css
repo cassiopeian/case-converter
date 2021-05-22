@@ -116,6 +116,9 @@ textarea:focus {
     margin: 0;
     padding: 1rem 1rem;
 }
+.options:hover {
+    background-color: rgb(189, 44, 0);
+}
 
 /* FOOTER */
 
