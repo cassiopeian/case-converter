@@ -122,6 +122,10 @@ textarea:focus {
 #selection-placeholder:hover #dropdown {
     display: block;
 }
+#selection-placeholder:hover #arrow {
+    transform: rotate(225deg);
+    margin: 0;
+}
 
 /* FOOTER */
 
