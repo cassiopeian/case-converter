@@ -71,12 +71,13 @@ textarea:focus {
 #selection-placeholder {
     display: inline-block;
     position: relative;
-    min-width: 120px;
+    min-width: 150px;
     font-family: capitol, sans-serif;
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 218, 185);
     border-bottom: 1px solid rgb(255, 167, 38);
+    padding-right: 2px;
     cursor: pointer;
 }
 #selection-placeholder span {
@@ -89,7 +90,7 @@ textarea:focus {
     position: relative;
     border: solid rgb(255, 218, 185);
     border-width: 0 1px 1px 0;
-    margin: 0 0 5px 10px;
+    margin: 0 0 5px 0;
     padding: 4px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -100,7 +101,7 @@ textarea:focus {
     display: none;
     position: absolute;
     background-color: rgb(255, 87, 34);
-    min-width: 120px;
+    min-width: 150px;
     z-index: 1;
 }
 
