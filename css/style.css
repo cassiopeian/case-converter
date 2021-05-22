@@ -65,7 +65,6 @@ textarea:focus {
     font-size: 1.8rem;
     line-height: 1.5rem;
     text-align: center;
-    text-transform: lowercase;
     color: rgb(255, 167, 38);
 }
 #selection-placeholder {
