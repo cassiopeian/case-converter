@@ -119,6 +119,9 @@ textarea:focus {
 .options:hover {
     background-color: rgb(189, 44, 0);
 }
+#selection-placeholder:hover #dropdown {
+    display: block;
+}
 
 /* FOOTER */
 
