@@ -58,6 +58,7 @@ textarea:focus {
     box-shadow: 0px 0px 0 6px rgb(47, 171, 230);
 }
 #converter {
+    display: inline-block;
     font-family: capitol, sans-serif;
     font-weight: 600;
     font-style: normal;
