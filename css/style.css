@@ -79,6 +79,11 @@ textarea:focus {
     border-bottom: 1px solid rgb(255, 167, 38);
     cursor: pointer;
 }
+#selection-placeholder span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #arrow {
     display: inline-block;
     position: relative;
