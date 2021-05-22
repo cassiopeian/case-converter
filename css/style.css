@@ -90,6 +90,13 @@ textarea:focus {
     transition-duration: 0.3s;
     cursor: pointer;
 }
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 87, 34);
+    min-width: 120px;
+    z-index: 1;
+}
 
 /* FOOTER */
 
