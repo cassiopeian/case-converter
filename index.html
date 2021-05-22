@@ -15,7 +15,15 @@
     </header>
     <main>
         <textarea placeholder="Enter text here"></textarea>
-        <p id="converter">Convert text to</p>
+        <span id="converter">Convert text to 
+            <div id="selection-placeholder">
+                <span>select <i id="arrow"></i></span>
+                <div id="dropdown">
+                    <p class="options" id="lowercase">lowercase</p>
+                    <p class="options" id="uppercase">UPPERCASE</p>
+                </div>
+            </div>
+        </span>
     </main>
     <footer>
         <p id="copyright">&copy; 2021 Cassiopeia Neely. All Rights Reserved.</p>
