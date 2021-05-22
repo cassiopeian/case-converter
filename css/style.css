@@ -17,19 +17,30 @@ body {
     padding: 0;
     background-color: rgb(28, 33, 62);
 }
+
+/* FONTS */
+
 textarea,
 #copyright {
     font-family: lieberuth, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
-/* MAIN  */
-
-h1 {
+h1,
+.options {
     font-family: typeka, sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+#converter,
+#selection-placeholder {
+    font-family: capitol, sans-serif;
+    font-style: normal;
+}
+
+/* MAIN */
+
+h1 {
     font-size: 2.3rem;
     letter-spacing: .1rem;
     text-align: center;
@@ -59,9 +70,7 @@ textarea:focus {
 }
 #converter {
     display: block;
-    font-family: capitol, sans-serif;
     font-weight: 600;
-    font-style: normal;
     font-size: 1.8rem;
     line-height: 1.5rem;
     text-align: center;
@@ -71,9 +80,7 @@ textarea:focus {
     display: inline-block;
     position: relative;
     min-width: 150px;
-    font-family: capitol, sans-serif;
     font-weight: 300;
-    font-style: normal;
     color: rgb(255, 218, 185);
     border-bottom: 1px solid rgb(255, 167, 38);
     padding-right: 2px;
@@ -102,6 +109,12 @@ textarea:focus {
     background-color: rgb(255, 87, 34);
     min-width: 150px;
     z-index: 1;
+}
+.options {
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+    margin: 0;
+    padding: 1rem 1rem;
 }
 
 /* FOOTER */
