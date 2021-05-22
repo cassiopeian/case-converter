@@ -71,6 +71,7 @@ textarea:focus {
 #selection-placeholder {
     display: inline-block;
     position: relative;
+    min-width: 120px;
     font-family: capitol, sans-serif;
     font-weight: 300;
     font-style: normal;
