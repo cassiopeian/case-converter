@@ -119,15 +119,18 @@ textarea:focus {
     border: none;
     cursor: pointer;
 }
-.options:hover {
-    background-color: rgb(189, 44, 0);
-}
-#selection-placeholder:hover #dropdown {
-    display: block;
-}
-#selection-placeholder:hover #arrow {
-    transform: rotate(225deg);
-    margin: 0;
+/* media query solves sticky hover on mobile */
+@media (hover:hover) {
+    .options:hover {
+        background-color: rgb(189, 44, 0);
+    }
+    #selection-placeholder:hover #dropdown {
+        display: block;
+    }
+    #selection-placeholder:hover #arrow {
+        transform: rotate(225deg);
+        margin: 0;
+    }
 }
 
 /* FOOTER */
