@@ -106,15 +106,18 @@ textarea:focus {
 #dropdown {
     display: none;
     position: absolute;
-    background-color: rgb(255, 87, 34);
-    min-width: 150px;
     z-index: 1;
 }
 .options {
     font-size: 1.15rem;
     letter-spacing: .1rem;
+    color: rgb(255, 218, 185);
+    background-color: rgb(255, 87, 34);
+    min-width: 150px;
     margin: 0;
     padding: 1rem 1rem;
+    border: none;
+    cursor: pointer;
 }
 .options:hover {
     background-color: rgb(189, 44, 0);
