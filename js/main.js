@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    
+
     // if the user makes a selection
     function blankAlert() {
         // and the textarea is empty
-        if ($('textarea').val('')) {
+        if ($('textarea').val().length === 0) {
             // prompt the user to input text
             alert('Add some text!');
         }
