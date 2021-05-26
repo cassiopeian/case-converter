@@ -127,13 +127,13 @@ textarea:focus {
     .options:hover {
         background-color: rgb(189, 44, 0);
     }
-    #selection-placeholder:hover #dropdown {
+    /* #selection-placeholder:hover #dropdown {
         display: block;
     }
     #selection-placeholder:hover #arrow {
         transform: rotate(225deg);
         margin: 0;
-    }
+    } */
 }
 
 /* FOOTER */
