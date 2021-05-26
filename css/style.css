@@ -33,7 +33,7 @@ h1,
     font-style: normal;
 }
 #converter,
-#selection-placeholder {
+#case-selection {
     font-family: capitol, sans-serif;
     font-style: normal;
 }
@@ -79,18 +79,22 @@ textarea:focus {
 #selection-placeholder {
     display: inline-block;
     position: relative;
-    min-width: 150px;
-    font-weight: 300;
-    letter-spacing: .05rem;
-    color: rgb(255, 218, 185);
     border-bottom: 1px solid rgb(255, 167, 38);
-    padding-right: 2px;
-    cursor: pointer;
 }
-#selection-placeholder span {
+#case-selection {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 150px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
+    color: rgb(255, 218, 185);
+    background-color: inherit;
+    border: none;
+    padding: 0 2px 0 0;
+    cursor: pointer;
 }
 #arrow {
     display: inline-block;
