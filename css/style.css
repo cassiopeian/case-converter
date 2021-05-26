@@ -81,6 +81,7 @@ textarea:focus {
     position: relative;
     min-width: 150px;
     font-weight: 300;
+    letter-spacing: .05rem;
     color: rgb(255, 218, 185);
     border-bottom: 1px solid rgb(255, 167, 38);
     padding-right: 2px;
