@@ -28,6 +28,7 @@ $(document).ready(function() {
         $('#dropdown').css('display', 'none');
     };
 
+    // allow the user to close the dropdown without making a selection
     $('#selection-placeholder').on('click', function() {
         rotateArrow();
 
