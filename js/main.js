@@ -20,6 +20,14 @@ $(document).ready(function() {
         }
     };
 
+    function confirmSelection() {
+        // update "select case" placeholder with selected case
+        $('#case-selection span').html($(this).html());
+
+        // close the dropdown
+        $('#dropdown').css('display', 'none');
+    };
+
     $('#selection-placeholder').on('click', function() {
         rotateArrow();
 
@@ -27,40 +35,30 @@ $(document).ready(function() {
         $('#dropdown').toggle();
     });
 
-    // if the lowercase option is selected
-    $('#lowercase').on('click', function(event) {
-        // convert all textarea content to lowercase
-        $('textarea').val(function() {
-            return this.value.toLowerCase();
-        });
+    $('#dropdown button').on('click', function(event) {
+        // make each dropdown button a potential target
+        let target = $(event.target);
+        if (target.is('#lowercase')) {
+            // convert all textarea content to lowercase
+            $('textarea').val(function() {
+                return this.value.toLowerCase();
+            });
+        } else if (target.is('#uppercase')) {
+            // convert all textarea content to uppercase
+            $('textarea').val(function() {
+                return this.value.toUpperCase();
+            });
+        }
 
         // prevent event bubbling
         event.stopPropagation();
 
         rotateArrow();
-
-        // close the dropdown
-        $('#dropdown').css('display', 'none');
-        
+     
         blankAlert();
     });
 
-    // if the uppercase option is selected
-    $('#uppercase').on('click', function(event) {
-        // convert all textarea content to uppercase
-        $('textarea').val(function() {
-            return this.value.toUpperCase();
-        }); 
+    $('#lowercase').on('click', confirmSelection);
 
-        // prevent event bubbling
-        event.stopPropagation();
-
-        rotateArrow();
-
-        // close the dropdown
-        $('#dropdown').css('display', 'none');
-
-        blankAlert();
-    });
+    $('#uppercase').on('click', confirmSelection);
 });
-
