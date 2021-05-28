@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    let canConvert = true;
 
     // if the user makes a selection
     function blankAlert() {
@@ -6,6 +7,12 @@ $(document).ready(function() {
         if ($('textarea').val().length === 0) {
             // prompt the user to input text
             alert('Add some text!');
+
+            // in this state, the text cannot be converted
+            canConvert = false;
+        } else {
+            // the user can convert their text
+            canConvert = true;
         }
     };
 
@@ -21,11 +28,14 @@ $(document).ready(function() {
     };
 
     function confirmSelection() {
-        // update "select case" placeholder with selected case
-        $('#case-selection span').html($(this).html()).addClass('confirmed');
+        // if there is text in the textarea
+        if (canConvert === true) {
+            // update "select case" placeholder with selected case
+            $('#case-selection span').html($(this).html()).addClass('confirmed');
+        }
 
         // close the dropdown
-        $('#dropdown').css('display', 'none');
+        $('#dropdown').css('display', 'none'); 
     };
 
     // allow the user to close the dropdown without making a selection
