@@ -22,7 +22,10 @@ $(document).ready(function() {
 
     function confirmSelection() {
         // update "select case" placeholder with selected case
-        $('#case-selection span').html($(this).html());
+        $('#case-selection span').html($(this).html()).addClass('confirmed');
+
+        // update the case selection button's padding bottom
+        $('#case-selection').css('padding', '0 2px 2px 0');
 
         // close the dropdown
         $('#dropdown').css('display', 'none');
