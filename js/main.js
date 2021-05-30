@@ -38,12 +38,28 @@ $(document).ready(function() {
         $('#dropdown').css('display', 'none'); 
     };
 
-    // allow the user to close the dropdown without making a selection
-    $('#selection-placeholder').on('click', function() {
-        rotateArrow();
+    function closeDropdown() {
+        // rotate arrow up
+        $('#arrow').css({'transform': 'rotate(45deg)', 'margin': '0 0 5px 0'});
 
-        // toggle dropdown display
-        $('#dropdown').toggle();
+        // close the dropdown
+        $('#dropdown').css('display', 'none'); 
+    };
+
+    $(window).on('click', function(event) {
+        let selection = $(event.target);
+
+        // if the target is anything on the page, except a descendant of #case-selection
+        if (selection.is($('html').find('*')) == true && selection.is($('#case-selection').find('*')) == false) {
+            // close the dropdown and rotate the arrow up
+            closeDropdown();
+        } else if (selection.is($('#case-selection').find('*')) == true) {
+            // otherwise, if the user selects a descendant of #case-selection, let the arrow rotate up/down
+            rotateArrow();
+
+            // and toggle the dropdown display to open/close
+            $('#dropdown').toggle();
+        }
     });
 
     $('#dropdown button').on('click', function(event) {
