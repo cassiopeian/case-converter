@@ -108,4 +108,6 @@ $(document).ready(function() {
     $('#lowercase').on('click', confirmSelection);
 
     $('#uppercase').on('click', confirmSelection);
+
+    $('#togglecase').on('click', confirmSelection);
 });
