@@ -75,6 +75,26 @@ $(document).ready(function() {
             $('textarea').val(function() {
                 return this.value.toUpperCase();
             });
+        } else if (target.is('#togglecase')) {
+            // convert all textarea content to togglecase
+            $('textarea').val(function() {
+                // convert the user input to a variable
+                let text = $('textarea').val();
+
+                // split the characters apart
+                text = text.split('');
+
+                // loop through the individual characters
+                for (let i = 0; i < text.length; i++) {
+                    // if the index is divisible by 2 (i.e., even)
+                    if ((i % 2) == 0) {
+                        // convert the character to uppercase
+                        text[i] = text[i].toUpperCase();
+                    } 
+                }
+                console.log(text.join(''));
+                return text = text.join('');
+            });
         }
 
         // prevent event bubbling
