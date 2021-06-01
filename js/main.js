@@ -78,11 +78,8 @@ $(document).ready(function() {
         } else if (target.is('#togglecase')) {
             // convert all textarea content to togglecase
             $('textarea').val(function() {
-                // convert the user input to a variable
-                let text = $('textarea').val();
-
-                // split the characters apart
-                text = text.split('');
+                // split the characters in the user's input text 
+                let text = $('textarea').val().split('');
 
                 // loop through the individual characters
                 for (let i = 0; i < text.length; i++) {
