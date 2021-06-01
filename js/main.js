@@ -90,7 +90,10 @@ $(document).ready(function() {
                     if ((i % 2) == 0) {
                         // convert the character to uppercase
                         text[i] = text[i].toUpperCase();
-                    } 
+                    } else {
+                        // else, if odd, convert the character to lowercase
+                        text[i] = text[i].toLowerCase();
+                    }
                 }
                 console.log(text.join(''));
                 return text = text.join('');
