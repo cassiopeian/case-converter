@@ -50,6 +50,23 @@ h1 {
 h1 span {
     text-transform: uppercase;
 }
+#icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    margin: 2rem auto 0;
+}
+#clipboard {
+    font-family: capitol, sans-serif;
+    font-style: normal;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: .05rem;
+    color: rgb(47, 171, 230);
+    margin: 0 1rem;
+    cursor: pointer;
+}
 textarea {
     display: block;
     font-size: 1.5rem;
@@ -61,7 +78,7 @@ textarea {
     border: none;
     border-radius: 25px;
     padding: 2rem;
-    margin: 3rem auto;
+    margin: 1rem auto 3rem;
     resize: none;
 }
 textarea:focus {
