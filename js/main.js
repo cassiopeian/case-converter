@@ -110,4 +110,13 @@ $(document).ready(function() {
     $('#uppercase').on('click', confirmSelection);
 
     $('#togglecase').on('click', confirmSelection);
+
+    // when the user clicks on the copy button
+    $('#clipboard').on('click', function() {
+        // select/highlight the textarea content 
+        $('textarea').select();
+
+        // copy the textarea content to the clipboard
+        navigator.clipboard.writeText($('textarea').val());
+    });
 });
