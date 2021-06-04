@@ -61,12 +61,8 @@ textarea {
     margin: 2rem auto 0;
 }
 #clipboard {
-    font-family: capitol, sans-serif;
-    font-style: normal;
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-    letter-spacing: .05rem;
-    color: rgb(47, 171, 230);
+    display: block;
+    height: 45px;
     margin: 0 1rem;
     cursor: pointer;
 }
