@@ -159,6 +159,9 @@ textarea:focus {
         transform: rotate(225deg);
         margin: 0;
     } */
+    #clipboard:hover {
+        filter: brightness(80%);
+    }
 }
 .confirmed {
     letter-spacing: .1rem;
