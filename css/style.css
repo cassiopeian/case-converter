@@ -19,7 +19,6 @@ body {
     background-image: url('../images/mint-typewriter.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
 }
 
 /* FONTS */
@@ -190,6 +189,12 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+@media only screen and (max-width: 850px) {
+    body {
+        background-size: cover;
+    }
+}
 
 @media only screen and (max-width: 750px) {
     #icon-wrapper,
