@@ -190,16 +190,41 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 1050px) {
+    #icon-wrapper,
+    textarea {
+        width: 45%;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     body {
         background-size: cover;
+    }
+    #icon-wrapper,
+    textarea {
+        width: 55%;
     }
 }
 
 @media only screen and (max-width: 750px) {
     #icon-wrapper,
     textarea {
-        width: 75%;
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #icon-wrapper,
+    textarea {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #icon-wrapper,
+    textarea {
+        width: 85%;
     }
 }
 
