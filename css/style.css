@@ -57,7 +57,8 @@ h1 span {
 #icon-wrapper,
 textarea {
     /* width: 60%; */
-    width: 35%;
+    /* width: 35%; */
+    width: 40%;
 }
 #icon-wrapper {
     display: flex;
@@ -190,14 +191,14 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1090px) {
     #icon-wrapper,
     textarea {
-        width: 45%;
+        width: 50%;
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     body {
         background-size: cover;
     }
@@ -207,24 +208,17 @@ footer {
     }
 }
 
-@media only screen and (max-width: 750px) {
-    #icon-wrapper,
-    textarea {
-        width: 65%;
-    }
-}
-
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 760px) {
     #icon-wrapper,
     textarea {
         width: 70%;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 513px) {
     #icon-wrapper,
     textarea {
-        width: 85%;
+        width: 80%;
     }
 }
 
