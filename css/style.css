@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(28, 33, 62);
-    background-image: url('../images/mint-green-typewriter.svg');
+    /* background-image: url('../images/mint-green-typewriter.svg'); */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -48,8 +48,8 @@ h1 {
     font-size: 2.3rem;
     letter-spacing: .1rem;
     text-align: center;
-    /* color: rgb(224, 241, 234); */
-    color: rgb(68, 54, 54);
+    color: rgb(224, 241, 234);
+    /* color: rgb(68, 54, 54); */
 }
 h1 span {
     text-transform: uppercase;
@@ -69,7 +69,8 @@ textarea {
 }
 #clipboard {
     display: block;
-    height: 45px;
+    /* height: 45px; */
+    height: 35px;
     margin: 0 1rem;
     cursor: pointer;
 }
@@ -84,8 +85,8 @@ textarea {
     border: none;
     border-radius: 25px;
     padding: 1rem 1.5rem;
-    /* margin: 1rem auto 3rem; */
-    margin: 1rem auto 6rem;
+    margin: 1rem auto 3rem;
+    /* margin: 1rem auto 6rem; */
     resize: none;
 }
 textarea:focus {
