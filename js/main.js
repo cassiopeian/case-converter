@@ -101,6 +101,14 @@ $(document).ready(function() {
         event.stopPropagation();
 
         rotateArrow();
+
+        // reveal the airplane and activate the keyframes animation that makes it fly
+        $('#airplane').css('display', 'block').addClass('flight');
+            
+        // when the animation ends, hide the airplane and reset the animation
+        setTimeout(function() {
+            $('#airplane').css('display', 'none').removeClass('flight');
+        }, 2050);
      
         blankAlert();
     });
