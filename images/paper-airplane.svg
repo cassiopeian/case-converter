@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="airplane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.683 17.984" style="enable-background:new 0 0 45.683 17.984;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#B96D00;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_2_);stroke:#B96D00;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#ECECEC;stroke:#B96D00;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="27.979" y1="16.0772" x2="24.3115" y2="1.4208">
+	<stop  offset="0" style="stop-color:#6174A9"/>
+	<stop  offset="0.1435" style="stop-color:#6979AC"/>
+	<stop  offset="0.3676" style="stop-color:#7F88B3"/>
+	<stop  offset="0.6428" style="stop-color:#A3A1C0"/>
+	<stop  offset="0.8861" style="stop-color:#C9BACD"/>
+</linearGradient>
+<polygon class="st0" points="7.779,8.842 7.829,5.545 45.402,11.717 7.779,9.342 "/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="26.5915" y1="18.0686" x2="24.9689" y2="11.5838">
+	<stop  offset="0.1139" style="stop-color:#BA9BC9"/>
+	<stop  offset="0.3092" style="stop-color:#AC95C4"/>
+	<stop  offset="0.6784" style="stop-color:#8684B6"/>
+	<stop  offset="1" style="stop-color:#6174A9"/>
+</linearGradient>
+<path class="st1" d="M7.08,14.237l0.3,3.497c12.26-1.969,24.519-3.937,36.779-5.906C31.799,12.631,19.439,13.434,7.08,14.237z"/>
+<polygon class="st2" points="5.634,8.013 45.402,11.717 0.25,16.001 "/>
+<path class="st2" d="M7.844,5.537c2.309-1.762,4.619-3.525,6.928-5.287c10.22,3.814,20.44,7.627,30.66,11.441
+	C32.903,9.64,20.374,7.588,7.844,5.537z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
