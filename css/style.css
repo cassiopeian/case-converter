@@ -48,7 +48,6 @@ h1 {
     letter-spacing: .1rem;
     text-align: center;
     color: rgb(224, 241, 234);
-    /* color: rgb(68, 54, 54); */
 }
 h1 span {
     text-transform: uppercase;
@@ -57,18 +56,16 @@ h1 span {
 textarea {
     /* width: 60%; */
     /* width: 35%; */
-    width: 40%;
+    width: 50%;
 }
 #icon-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* margin: 2rem auto 0; */
-    margin: 1rem auto 0;
+    margin: 2rem auto 0;
 }
 #clipboard {
     display: block;
-    /* height: 45px; */
     height: 35px;
     margin: 0 1rem;
     cursor: pointer;
@@ -79,18 +76,15 @@ textarea {
     letter-spacing: .05rem;
     color: rgb(82, 82, 82);
     background-color: rgb(236, 236, 236);
-    /* height: 250px; */
-    height: 150px;
+    height: 200px;
     border: none;
     border-radius: 25px;
     padding: 1rem 1.5rem;
-    margin: 1rem auto 3rem;
-    /* margin: 1rem auto 6rem; */
+    margin: 1.5rem auto 3rem;
     resize: none;
 }
 textarea:focus {
     outline: none;
-    /* box-shadow: 0px 0px 0 6px rgb(255, 167, 38); */
     box-shadow: 0px 0px 0 6px rgb(47, 171, 230);
 }
 #converter-wrapper {
@@ -161,13 +155,6 @@ textarea:focus {
     .options:hover {
         background-color: rgb(189, 44, 0);
     }
-    /* #selection-placeholder:hover #dropdown {
-        display: block;
-    }
-    #selection-placeholder:hover #arrow {
-        transform: rotate(225deg);
-        margin: 0;
-    } */
     #clipboard:hover {
         filter: brightness(80%);
     }
@@ -220,38 +207,18 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1000px) {
     #icon-wrapper,
     textarea {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    body {
-        background-size: cover;
-    }
-    #icon-wrapper,
-    textarea {
-        width: 55%;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    #icon-wrapper,
-    textarea {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 513px) {
-    #icon-wrapper,
-    textarea {
-        width: 80%;
+        width: 65%;
     }
 }
 
 @media only screen and (max-width: 415px) {
+    #icon-wrapper,
+    textarea {
+        width: 80%;
+    }
     textarea {
         font-size: 1.3rem;
     }
