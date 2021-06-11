@@ -229,6 +229,9 @@ footer {
 }
 
 @media only screen and (max-width: 415px) {
+    h1 {
+        font-size: 1.8rem;
+    }
     #icon-wrapper,
     textarea {
         width: 80%;
