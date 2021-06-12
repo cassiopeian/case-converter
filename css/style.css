@@ -223,11 +223,12 @@ textarea:focus {
 footer {
     width: 100%;
     margin-top: auto;
-    padding: 1rem 2rem;
+    padding: .7rem 1rem;
+    background-color: rgba(15, 20, 45, .5);
 }
 #copyright {
     font-size: .8rem;
-    color: rgb(236, 236, 236);
+    color: rgba(255, 218, 185, .6);
     margin: 0;
 }
 
