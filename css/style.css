@@ -79,10 +79,25 @@ textarea {
     margin: 2rem auto 0;
 }
 #clipboard {
-    display: block;
-    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 100px;
     margin: 0 1rem;
     cursor: pointer;
+}
+/* prevent sticky hover, on mobile */
+@media (hover:hover) {
+    #clipboard:hover {
+        filter: brightness(80%);
+        background-color: rgb(19, 24, 56);
+    }
+}
+#clipboard img {
+    display: block;
+    height: 35px;
 }
 textarea {
     display: block;
@@ -94,7 +109,7 @@ textarea {
     border: none;
     border-radius: 25px;
     padding: 1rem 1.5rem;
-    margin: 1.5rem auto 3rem;
+    margin: 1rem auto 3rem;
     resize: none;
 }
 textarea:focus {
@@ -164,13 +179,10 @@ textarea:focus {
 .options:active {
     background-color: rgb(189, 44, 0);
 }
-/* media query solves sticky hover on mobile */
+/* prevent sticky hover, on mobile */
 @media (hover:hover) {
     .options:hover {
         background-color: rgb(189, 44, 0);
-    }
-    #clipboard:hover {
-        filter: brightness(80%);
     }
 }
 .confirmed {
