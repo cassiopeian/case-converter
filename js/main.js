@@ -47,6 +47,14 @@ $(document).ready(function() {
             setTimeout(function() {
             $('#airplane').css('display', 'none').removeClass('flight');
             }, 2050);
+
+            // activate the fly-in keyframes animation
+            $('#incoming-airplane').addClass('incoming-flight');
+
+            // reset the fly-in animation
+            setTimeout(function() {
+            $('#incoming-airplane').removeClass('incoming-flight');
+            }, 4050);
         }
     };
 
