@@ -191,6 +191,9 @@ textarea:focus {
 
 /* ANIMATION */
 
+#airplane-container {
+    overflow-x: clip;
+}
 #airplane {
     display: none;
     width: 100px;
@@ -198,19 +201,16 @@ textarea:focus {
     position: relative;
     transform: rotate3d(1, 3, 5, 45deg);
 }
-
 .flight {
     -webkit-animation: flying-plane 3s ease-in-out;
     animation: flying-plane 3s ease-in-out;
 }
-
 @-webkit-keyframes flying-plane {
     0% {transform: rotate3d(1, 3, 5, 45deg); left: 0px; top: 0px;}
     25% {transform: rotate3d(1, 3, 5, 22deg);}
     50% {transform: rotate3d(1, 3, 5, 6deg);}
     100% {transform: rotate3d(1, 3, 5, 1deg); left: 100%; top: 200px;}
 }
-
 @keyframes flying-plane {
     0% {transform: rotate3d(1, 3, 5, 45deg); left: 0px; top: 0px;}
     25% {transform: rotate3d(1, 3, 5, 22deg);}
