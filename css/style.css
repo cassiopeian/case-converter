@@ -43,6 +43,9 @@ h1,
 
 /* HEADER */
 
+header {
+    overflow: hidden;
+}
 #typewriter-container {
     display: flex;
     justify-content: center;
@@ -216,6 +219,28 @@ textarea:focus {
     25% {transform: rotate3d(1, 3, 5, 22deg);}
     50% {transform: rotate3d(1, 3, 5, 6deg);}
     100% {transform: rotate3d(1, 3, 5, 1deg); left: 100%; top: 200px;}
+}
+
+#incoming-airplane {
+    position: relative;
+    width: 50px;
+    left: 100%;
+}
+.incoming-flight {
+    -webkit-animation: fly-in 3s ease-in 1s;
+    animation: fly-in 3s ease-in 1s;
+}
+@-webkit-keyframes fly-in {
+    0% {transform: rotate3d(1, 3, 5, 40deg); left: 100%; top: 0;}
+    25% {transform: rotate3d(1, 3, 5, 20deg);}
+    50% {transform: rotate3d(1, 3, 5, 10deg);}
+    100% {transform: rotate3d(1, 3, 5, 0deg); left: 50%; top: 10px;}
+}
+@keyframes fly-in {
+    0% {transform: rotate3d(1, 3, 5, 40deg); left: 100%; top: 0;}
+    25% {transform: rotate3d(1, 3, 5, 20deg);}
+    50% {transform: rotate3d(1, 3, 5, 10deg);}
+    100% {transform: rotate3d(1, 3, 5, 0deg); left: 50%; top: 10px;}
 }
 
 /* FOOTER */
