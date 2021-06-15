@@ -46,25 +46,11 @@ h1,
 header {
     overflow: hidden;
 }
-#typewriter-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#typewriter-banner {
+    display: block;
+    width: 30%;
+    min-width: 270px;
     margin: 0 auto .5rem;
-    width: 10%;
-} 
-#typewriter {
-    width: 100%;
-}
-h1 {
-    font-size: 2.3rem;
-    letter-spacing: .1rem;
-    text-align: center;
-    color: rgb(224, 241, 234);
-    margin: .5rem 0;
-}
-h1 span {
-    text-transform: uppercase;
 }
 
 /* MAIN */
