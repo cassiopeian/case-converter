@@ -103,6 +103,22 @@ textarea:focus {
     outline: none;
     box-shadow: 0px 0px 0 6px rgb(47, 171, 230);
 }
+.fade-in {
+    -webkit-animation: fadeText 1.5s ease-in;
+    animation: fadeText 1.5s ease-in;
+}
+@-webkit-keyframes fadeText {
+    0% {color: rgba(82, 82, 82, 0);}
+    25% {color: rgba(82, 82, 82, .25);}
+    50% {color: rgba(82, 82, 82, .5);}
+    100% {color: rgba(82, 82, 82, 1);}
+}
+@keyframes fadeText {
+    0% {color: rgba(82, 82, 82, 0);}
+    25% {color: rgba(82, 82, 82, .25);}
+    50% {color: rgba(82, 82, 82, .5);}
+    100% {color: rgba(82, 82, 82, 1);}
+}
 #converter-wrapper {
     display: flex;
     align-items: center;
