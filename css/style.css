@@ -176,8 +176,9 @@ textarea:focus {
     letter-spacing: .1rem;
 }
 
-/* ANIMATION */
+/* AIRPLANE ANIMATION */
 
+/* big, outbound plane */
 #airplane-container {
     overflow-x: clip;
 }
@@ -205,6 +206,7 @@ textarea:focus {
     100% {transform: rotate3d(1, 3, 5, 1deg); left: 100%; top: 200px;}
 }
 
+/* little, inbound plane */
 #incoming-airplane {
     position: relative;
     width: 50px;
