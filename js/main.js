@@ -120,6 +120,14 @@ $(document).ready(function() {
         // prevent event bubbling
         event.stopPropagation();
 
+        // activate the keyframes animation that makes the text fade in
+        $('textarea').addClass('fade-in');
+
+        // reset the fade-in animation 
+        setTimeout(function() {
+            $('textarea').removeClass('fade-in');
+        }, 1050);
+
         rotateArrow();
         
         blankAlert();
