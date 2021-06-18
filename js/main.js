@@ -117,6 +117,15 @@ $(document).ready(function() {
             });
         }
 
+        // to ensure "retoggle" is available only while toggle is selected
+        if (target.is('#togglecase')) {
+            //reveal the retoggle button
+            $('#retoggle').css('display', 'flex');
+        } else {
+            //hide the retoggle button
+            $('#retoggle').css('display', 'none');
+        }
+
         // prevent event bubbling
         event.stopPropagation();
 
