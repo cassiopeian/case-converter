@@ -65,24 +65,31 @@ textarea {
     justify-content: flex-end;
     margin: 1rem auto 0;
 }
-#clipboard {
+#retoggle {
+    display: none;
+}
+.icon {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 55px;
     width: 55px;
     border-radius: 100px;
-    margin: 0 1rem;
+    margin: 0;
     cursor: pointer;
 }
 /* prevent sticky hover, on mobile */
 @media (hover:hover) {
+    #retoggle:hover {
+        filter: brightness(80%);
+        background-color: rgb(189, 44, 0);
+    }
     #clipboard:hover {
         filter: brightness(80%);
         background-color: rgb(19, 24, 56);
     }
 }
-#clipboard img {
+.icon img {
     display: block;
     height: 35px;
 }
