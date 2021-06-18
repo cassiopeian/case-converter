@@ -104,7 +104,7 @@ $(document).ready(function() {
                 // loop through the individual characters
                 for (let i = 0; i < text.length; i++) {
                     // if the index is divisible by 2 (i.e., even)
-                    if ((i % 2) == 0) {
+                    if ((i % 2) !== 0) {
                         // convert the character to uppercase
                         text[i] = text[i].toUpperCase();
                     } else {
