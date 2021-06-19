@@ -1,5 +1,6 @@
 $(document).ready(function() {
     let canConvert = true;
+    let upThenDown;
 
     // if the user makes a selection
     function blankAlert() {
@@ -66,6 +67,56 @@ $(document).ready(function() {
         $('#dropdown').css('display', 'none'); 
     };
 
+    function toggleStartUp() {
+        // confirm toggle begins with an uppercase letter
+        upThenDown = true;
+
+        // convert all textarea content to togglecase
+        $('textarea').val(function() {
+            // split the characters in the user's input text 
+            let text = $('textarea').val().split('');
+
+            // loop through the individual characters
+            for (let i = 0; i < text.length; i++) {
+                // if the index is divisible by 2 (i.e., even)
+                if ((i % 2) == 0) {
+                    // convert the character to uppercase
+                    text[i] = text[i].toUpperCase();
+                } else {
+                    // else, if odd, convert the character to lowercase
+                    text[i] = text[i].toLowerCase();
+                }
+            }
+            console.log(text.join(''));
+            return text = text.join('');
+        });
+    };
+
+    function toggleStartDown() {
+        // confirm toggle begins with a lowercase letter
+        upThenDown = false;
+
+        // convert all textarea content to togglecase
+        $('textarea').val(function() {
+            // split the characters in the user's input text 
+            let text = $('textarea').val().split('');
+
+            // loop through the individual characters
+            for (let i = 0; i < text.length; i++) {
+                // if the index is not divisible by 2 (i.e., odd)
+                if ((i % 2) !== 0) {
+                    // convert the character to uppercase
+                    text[i] = text[i].toUpperCase();
+                } else {
+                    // else, if even, convert the character to lowercase
+                    text[i] = text[i].toLowerCase();
+                }
+            }
+            console.log(text.join(''));
+            return text = text.join('');
+        });
+    };
+
     $(window).on('click', function(event) {
         let selection = $(event.target);
 
@@ -97,24 +148,7 @@ $(document).ready(function() {
             });
         } else if (target.is('#togglecase')) {
             // convert all textarea content to togglecase
-            $('textarea').val(function() {
-                // split the characters in the user's input text 
-                let text = $('textarea').val().split('');
-
-                // loop through the individual characters
-                for (let i = 0; i < text.length; i++) {
-                    // if the index is not divisible by 2 (i.e., odd)
-                    if ((i % 2) !== 0) {
-                        // convert the character to uppercase
-                        text[i] = text[i].toUpperCase();
-                    } else {
-                        // else, if even, convert the character to lowercase
-                        text[i] = text[i].toLowerCase();
-                    }
-                }
-                console.log(text.join(''));
-                return text = text.join('');
-            });
+            toggleStartDown();
         }
 
         // to ensure "retoggle" is available only while toggle is selected
@@ -149,6 +183,17 @@ $(document).ready(function() {
     $('#uppercase').on('click', confirmSelection);
 
     $('#togglecase').on('click', confirmSelection);
+
+    $('#retoggle').on('click', function() {
+        // if toggle begins with a lowercase letter
+        if (upThenDown === false) {
+            // retoggle, so the first letter is uppercase
+            toggleStartUp();
+        } else if (upThenDown === true) {
+            // otherwise, revert back to a lowercase first letter
+            toggleStartDown();
+        }
+    });
 
     // when the user clicks on the copy button
     $('#clipboard').on('click', function() {
