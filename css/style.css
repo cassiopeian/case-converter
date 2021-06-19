@@ -276,6 +276,9 @@ footer {
     textarea {
         width: 80%;
     }
+    #icon-wrapper {
+        margin: 3rem auto 0;
+    }
     textarea {
         font-size: 1.3rem;
     }
@@ -285,6 +288,9 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
+    #icon-wrapper {
+        margin: 1rem auto 0;
+    }
     textarea {
         font-size: 1.1rem;
         height: 120px;
