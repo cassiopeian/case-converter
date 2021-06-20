@@ -80,11 +80,7 @@ textarea {
 }
 /* prevent sticky hover, on mobile */
 @media (hover:hover) {
-    #retoggle:hover {
-        filter: brightness(80%);
-        background-color: rgb(189, 44, 0);
-    }
-    #clipboard:hover {
+    .icon:hover {
         filter: brightness(80%);
         background-color: rgb(19, 24, 56);
     }
