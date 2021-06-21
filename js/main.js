@@ -1,6 +1,7 @@
 $(document).ready(function() {
     let canConvert = true;
     let upThenDown;
+    let spaceIndices = [];
 
     // if the user makes a selection
     function blankAlert() {
@@ -76,6 +77,18 @@ $(document).ready(function() {
             // split the characters in the user's input text 
             let text = $('textarea').val().split('');
 
+            // loop backward through text
+            for (let x = text.length - 1; x >= 0; x--) {
+                // and if the character is a blank space
+                if (text[x] === ' ') {
+                    // push the index of that space into the spaces array
+                    spaceIndices.push(x);
+                }
+            }
+
+            // remove blank spaces from the text, so they don't count as characters in the next step
+            text = text.filter(chars => chars.trim() !== '');
+
             // loop through the individual characters
             for (let i = 0; i < text.length; i++) {
                 // if the index is divisible by 2 (i.e., even)
@@ -87,6 +100,17 @@ $(document).ready(function() {
                     text[i] = text[i].toLowerCase();
                 }
             }
+
+            // loop backward through the numbers in the space index array
+            spaceIndices.reverse().forEach(num => {
+                console.log(text[num]);
+                // and insert spaces before those index locations in the text
+                text.splice(num, 0, ' ');
+            });
+
+            // clear the index array
+            spaceIndices = [];
+
             console.log(text.join(''));
             return text = text.join('');
         });
@@ -100,9 +124,6 @@ $(document).ready(function() {
         $('textarea').val(function() {
             // split the characters in the user's input text 
             let text = $('textarea').val().split('');
-            let spaceIndices = [];
-            
-            console.log(text);
 
             // loop backward through text
             for (let x = text.length - 1; x >= 0; x--) {
@@ -112,13 +133,9 @@ $(document).ready(function() {
                     spaceIndices.push(x);
                 }
             }
-            
-            console.log(spaceIndices);
 
             // remove blank spaces from the text, so they don't count as characters in the next step
             text = text.filter(chars => chars.trim() !== '');
-            
-            console.log(text);
 
             // loop through the individual characters
             for (let i = 0; i < text.length; i++) {
@@ -138,6 +155,9 @@ $(document).ready(function() {
                 // and insert spaces before those index locations in the text
                 text.splice(num, 0, ' ');
             });
+
+            // clear the index array
+            spaceIndices = [];
 
             console.log(text.join(''));
             return text = text.join('');
