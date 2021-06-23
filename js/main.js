@@ -164,7 +164,7 @@ $(document).ready(function() {
         });
     };
 
-    $(window).on('click', function(event) {
+    $(window).on('click touchstart', function(event) {
         let selection = $(event.target);
 
         // if the target is anything on the page, except a descendant of #case-selection
