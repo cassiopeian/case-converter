@@ -164,7 +164,19 @@ $(document).ready(function() {
         });
     };
 
-    $(window).on('click', function(event) {
+    // to prevent triggering both touch and click events, on mobile devices
+    $(window).on('touchstart click', function(event) {
+        // if a touch event is registered
+        if (event.type === 'touchstart') {
+            // cancel click events
+            $(window).off('click');
+            
+            // NB: this is also necessary, to make the retoggle button work
+            $('*').off('click');
+        }
+    });
+
+    $(window).on('touchstart click', function(event) {
         let selection = $(event.target);
 
         // if the target is anything on the page, except a descendant of #case-selection
@@ -180,7 +192,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#dropdown button').on('click', function(event) {
+    $('#dropdown button').on('touchstart click', function(event) {
         // make each dropdown button a potential target
         let target = $(event.target);
         if (target.is('#lowercase')) {
@@ -225,13 +237,13 @@ $(document).ready(function() {
         sendPlaneToTypewriter();
     });
 
-    $('#lowercase').on('click', confirmSelection);
+    $('#lowercase').on('touchstart click', confirmSelection);
 
-    $('#uppercase').on('click', confirmSelection);
+    $('#uppercase').on('touchstart click', confirmSelection);
 
-    $('#togglecase').on('click', confirmSelection);
+    $('#togglecase').on('touchstart click', confirmSelection);
 
-    $('#retoggle').on('click', function() {
+    $('#retoggle').on('touchstart click', function() {
         // if toggle begins with a lowercase letter
         if (upThenDown === false) {
             // retoggle, so the first letter is uppercase
@@ -243,7 +255,7 @@ $(document).ready(function() {
     });
 
     // when the user clicks on the copy button
-    $('#clipboard').on('click', function() {
+    $('#clipboard').on('touchstart click', function() {
         // select/highlight the textarea content 
         $('textarea').select();
 
