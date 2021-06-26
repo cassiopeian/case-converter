@@ -257,6 +257,7 @@ $(document).ready(function() {
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function() {
         // select/highlight the textarea content 
+        $('textarea').focus();
         $('textarea').select();
 
         // copy the textarea content to the clipboard
