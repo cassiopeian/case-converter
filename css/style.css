@@ -139,7 +139,7 @@ textarea:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 160px;
+    width: 10rem;
     font-size: 1.3rem;
     line-height: 1.5rem;
     letter-spacing: .05rem;
@@ -171,7 +171,7 @@ textarea:focus {
     letter-spacing: .1rem;
     color: rgb(255, 218, 185);
     background-color: rgb(255, 87, 34);
-    min-width: 160px;
+    width: 10rem;
     margin: 0;
     padding: 1rem 1rem;
     border: none;
