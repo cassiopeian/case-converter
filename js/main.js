@@ -255,7 +255,10 @@ $(document).ready(function() {
     });
 
     // when the user clicks on the copy button
-    $('#clipboard').on('touchstart click', function() {
+    $('#clipboard').on('touchstart click', function(event) {
+        // prevent focus from returning to clipboard icon
+        event.preventDefault();
+
         // select/highlight the textarea content 
         $('textarea').focus();
         $('textarea').select();
