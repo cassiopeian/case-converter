@@ -192,6 +192,13 @@ $(document).ready(function() {
         }
     });
 
+    $('#case-selection').on('touchstart', function(event) {
+        event.preventDefault();
+
+        // on mobile, close the soft keyboard
+        $('#case-selection').focus();
+    });
+
     $('#dropdown button').on('touchstart click', function(event) {
         // make each dropdown button a potential target
         let target = $(event.target);
