@@ -149,6 +149,9 @@ textarea:focus {
     padding: 0 2px 2px 0;
     cursor: pointer;
 }
+#case-selection:focus {
+    outline: none;
+}
 #arrow {
     display: inline-block;
     position: relative;
