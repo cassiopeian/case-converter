@@ -1,5 +1,10 @@
 # Case Converter
 
+## Table of Contents
+ 
+ + [Introduction](#introduction)
+ + [Tech Specs](#tech-specs)
+
  ## Introduction
 
  ![Homepage screenshot](images/read-me/homepage.png "Homepage screenshot")
