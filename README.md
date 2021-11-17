@@ -12,6 +12,20 @@
 
  Have you ever gone to capitalize one letter, then realized YOU’VE ACCIDENTALLY STARTED YELLING? Do you want to bE a LiTtLe SaRcAsTiC without all the effort? [Case Converter](https://cassiopeian.github.io/case-converter) can update text to UPPERCASE, lowercase, or tOgGlEcAsE, with one click.
 
+## Features 
+
+ ### Invert Togglecase Text
+
+ <img src="images/read-me/togglecase-example.png" style="width: 75%">
+
+ When text is converted to togglecase, the *Invert Case* button will appear beside the clipboard icon. This gives you the ability to convert the example text:
+
+ > sHaLl I cOmPaRe ThEe To A sUmMeR'S dAy?
+
+ to
+
+ > ShAlL i CoMpArE tHeE tO a SuMmEr's DaY? 
+
 ## Favicon
 
  <img src="images/typewriter-favicon.png" style="width: 25%">
