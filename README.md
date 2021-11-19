@@ -27,6 +27,12 @@
 
  > ShAlL i CoMpArE tHeE tO a SuMmEr's DaY? 
 
+ ### Animation
+
+ <img src="images/read-me/big-plane.png" style="width: 75%">
+
+ When a case is selected from the dropdown, a busy little paper airplane carries your request from the converter to the mint typewriter.
+
 ## Favicon
 
  <img src="images/typewriter-favicon.png" style="width: 25%">
