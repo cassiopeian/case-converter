@@ -272,5 +272,13 @@ $(document).ready(function() {
 
         // copy the textarea content to the clipboard
         navigator.clipboard.writeText($('textarea').val());
+
+        // display the "copied to clipboard" notice
+        $('#clipboard-notice').css('visibility', 'visible');
+
+        // and then hide the notice again
+        setTimeout(function() {
+            $('#clipboard-notice').css('visibility', 'hidden');
+        }, 2000);
     });
 });
