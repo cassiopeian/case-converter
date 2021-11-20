@@ -33,6 +33,12 @@
 
  When a case is selected from the dropdown, a busy little paper airplane carries your request from the converter to the mint typewriter.
 
+ ### Click to Copy Text 
+
+ <img src="images/read-me/clipboard-notice.png" style="width: 75%">
+
+ Copy your converted text, with one click, by selecting the clipboard icon. A little notification will flash above the icon, to let you know that the text has been copied to your device’s clipboard.
+ 
 ## Favicon
 
  <img src="images/typewriter-favicon.png" style="width: 25%">
