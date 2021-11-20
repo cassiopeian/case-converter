@@ -105,6 +105,7 @@ textarea {
     border-radius: 4px;
     margin: 0 0 .5rem 0;
     visibility: hidden;
+    z-index: 2;
 }
 #clipboard-notice::after {
     content: '';
