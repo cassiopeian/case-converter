@@ -28,6 +28,7 @@ textarea,
     font-weight: 400;
     font-style: normal;
 }
+#clipboard-confirmation,
 #case-selection,
 .options,
 .confirmed {
@@ -115,6 +116,12 @@ textarea {
     background-color: rgb(189, 44, 0);
     border-radius: 2px;
     transform: rotate(45deg);
+}
+#clipboard-confirmation {
+    font-size: .8rem;
+    color: rgb(255, 218, 185);
+    padding: .7rem;
+    margin: 0;
 }
 textarea {
     display: block;
