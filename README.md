@@ -4,6 +4,9 @@
  
  + [Introduction](#introduction)
  + [Features](#features)
+    - [Invert Togglecase Text](#invert-togglecase-text)
+    - [Animation](#animation)
+    - [Click to Copy Text](#click-to-copy-text)
  + [Favicon](#favicon)
  + [Tech Specs](#tech-specs)
 
@@ -38,7 +41,7 @@
  <img src="images/read-me/clipboard-notice.png" style="width: 75%">
 
  Copy your converted text, with one click, by selecting the clipboard icon. A little notification will flash above the icon, to let you know that the text has been copied to your device’s clipboard.
- 
+
 ## Favicon
 
  <img src="images/typewriter-favicon.png" style="width: 25%">
