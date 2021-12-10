@@ -61,9 +61,9 @@
  
  from "Sonnet XVIII" | William Shakespeare
 
- > And it grew both day and night. 
- > Till it bore an apple bright. 
- > And my foe beheld it shine,
+ > And it grew both day and night.  
+ > Till it bore an apple bright.  
+ > And my foe beheld it shine,  
  > And he knew that it was mine. 
 
  from "A Poison Tree" | William Blake 
