@@ -55,3 +55,6 @@
 ## Poetry Credit
 
  The excerpts featured in the screenshots, above, were drawn from poems. 
+
+ > Shall I compare thee to a summer's day?
+ from "Sonnet XVIII" | William Shakespeare 
