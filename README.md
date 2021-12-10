@@ -9,6 +9,7 @@
     - [Click to Copy Text](#click-to-copy-text)
  + [Favicon](#favicon)
  + [Tech Specs](#tech-specs)
+ + [Poetry Credit](#poetry-credit)
 
  ## Introduction
 
