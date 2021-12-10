@@ -51,3 +51,7 @@
 ## Tech Specs
 
  Case Converter was built with jQuery version 3.6.0.
+
+## Poetry Credit
+
+ The excerpts featured in the screenshots, above, were drawn from poems. 
