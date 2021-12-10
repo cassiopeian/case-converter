@@ -67,3 +67,11 @@
  > And he knew that it was mine. 
 
  from "A Poison Tree" | William Blake 
+
+ > You must come to them sideways  
+ > In rooms webbed in shadow,  
+ > Sneak a view of their emptiness  
+ > Without them catching  
+ > A glimpse of you in return.  
+
+ from "Mirrors at 4 a.m." | Charles Simic
