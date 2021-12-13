@@ -49,6 +49,10 @@
 
  Since this project is all about typing, a typewriter seemed like the perfect symbol. I wanted it to be modern and bright, so I chose to make it mint green. 
 
+## Inspiration 
+
+ It TaKeS fOrEvEr to type in togglecase on mobile devices. I knew there were built-in JavaScript methods to transform text to uppercase and lowercase, so I wanted to challenge myself to create a togglecase converter. 
+
 ## Tech Specs
 
  Case Converter was built with jQuery version 3.6.0.
