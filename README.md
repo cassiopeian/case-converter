@@ -8,6 +8,7 @@
     - [Animation](#animation)
     - [Click to Copy Text](#click-to-copy-text)
  + [Favicon](#favicon)
+ + [Inspiration](#inspiration)
  + [Tech Specs](#tech-specs)
  + [Poetry Credit](#poetry-credit)
 
