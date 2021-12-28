@@ -268,6 +268,8 @@ $(document).ready(function() {
 
     $('#uppercase').on('touchstart click', confirmSelection);
 
+    $('#title-case').on('touchstart click', confirmSelection);
+
     $('#togglecase').on('touchstart click', confirmSelection);
 
     $('#retoggle').on('touchstart click', function() {
