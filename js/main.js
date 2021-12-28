@@ -212,6 +212,26 @@ $(document).ready(function() {
             $('textarea').val(function() {
                 return this.value.toUpperCase();
             });
+        } else if (target.is('#title-case')) {
+            // convert all textarea content to title case
+            $('textarea').val(function() {
+                // split the string into words
+                let splitWords = $('textarea').val().split(' ');
+    
+                // to capitalize the first letter of each word
+                let titleCased = splitWords.map(word => {
+                    // get the first letter of each word
+                    let upLetters = word.substring(0, 1);
+                    // get the rest of each word
+                    let downLetters = word.substring(1);
+                    
+                    // cap the first letters, and make the rest lowercase
+                    return `${upLetters.toUpperCase()}${downLetters.toLowerCase()}`;
+                });
+
+                // remove array commas and display message
+                return titleCased.join(' ');
+            });
         } else if (target.is('#togglecase')) {
             // convert all textarea content to togglecase
             toggleStartDown();
