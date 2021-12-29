@@ -264,13 +264,8 @@ $(document).ready(function() {
         sendPlaneToTypewriter();
     });
 
-    $('#lowercase').on('touchstart click', confirmSelection);
-
-    $('#uppercase').on('touchstart click', confirmSelection);
-
-    $('#title-case').on('touchstart click', confirmSelection);
-
-    $('#togglecase').on('touchstart click', confirmSelection);
+    // confirm selection and close dropdown
+    $('#lowercase, #uppercase, #title-case, #togglecase').on('touchstart click', confirmSelection);
 
     $('#retoggle').on('touchstart click', function() {
         // if toggle begins with a lowercase letter
