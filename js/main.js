@@ -237,6 +237,12 @@ $(document).ready(function() {
                         titleCased[bb] == 'And' ||
                         titleCased[bb] == 'As' ||
                         titleCased[bb] == 'At' ||
+                        titleCased[bb] == 'But' ||
+                        titleCased[bb] == 'By' ||
+                        titleCased[bb] == 'For' ||
+                        titleCased[bb] == 'In' ||
+                        titleCased[bb] == 'Of' ||
+                        titleCased[bb] == 'On' ||
                         titleCased[bb] == 'The') {
                         titleCased[bb] = titleCased[bb].toLowerCase();
                     }
