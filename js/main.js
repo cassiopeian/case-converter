@@ -231,8 +231,10 @@ $(document).ready(function() {
 
                 // loop through all but the first word
                 for (let bb = 1; bb < titleCased.length; bb++) {
-                    // and keep 'the' lowercase 
-                    if (titleCased[bb] == 'The') {
+                    // and keep certain words lowercase 
+                    if (titleCased[bb] == 'A' ||
+                        titleCased[bb] == 'An' ||
+                        titleCased[bb] == 'The') {
                         titleCased[bb] = titleCased[bb].toLowerCase();
                     }
                 }
