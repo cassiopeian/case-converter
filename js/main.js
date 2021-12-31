@@ -243,7 +243,10 @@ $(document).ready(function() {
                         titleCased[bb] == 'In' ||
                         titleCased[bb] == 'Of' ||
                         titleCased[bb] == 'On' ||
-                        titleCased[bb] == 'The') {
+                        titleCased[bb] == 'Or' ||
+                        titleCased[bb] == 'The' ||
+                        titleCased[bb] == 'To' ||
+                        titleCased[bb] == 'With') {
                         titleCased[bb] = titleCased[bb].toLowerCase();
                     }
                 }
