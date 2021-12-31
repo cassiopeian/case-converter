@@ -234,6 +234,9 @@ $(document).ready(function() {
                     // and keep certain words lowercase 
                     if (titleCased[bb] == 'A' ||
                         titleCased[bb] == 'An' ||
+                        titleCased[bb] == 'And' ||
+                        titleCased[bb] == 'As' ||
+                        titleCased[bb] == 'At' ||
                         titleCased[bb] == 'The') {
                         titleCased[bb] = titleCased[bb].toLowerCase();
                     }
