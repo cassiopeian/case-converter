@@ -229,8 +229,8 @@ $(document).ready(function() {
                     return `${upLetters.toUpperCase()}${downLetters.toLowerCase()}`;
                 });
 
-                // loop through all but the first word
-                for (let bb = 1; bb < titleCased.length; bb++) {
+                // loop through all but the first and last words
+                for (let bb = 1; bb < titleCased.length - 1; bb++) {
                     // and keep certain words lowercase 
                     if (titleCased[bb] == 'A' ||
                         titleCased[bb] == 'An' ||
