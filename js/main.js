@@ -229,6 +229,14 @@ $(document).ready(function() {
                     return `${upLetters.toUpperCase()}${downLetters.toLowerCase()}`;
                 });
 
+                // loop through all but the first word
+                for (let bb = 1; bb < titleCased.length; bb++) {
+                    // and keep 'the' lowercase 
+                    if (titleCased[bb] == 'The') {
+                        titleCased[bb] = titleCased[bb].toLowerCase();
+                    }
+                }
+                
                 // remove array commas and display message
                 return titleCased.join(' ');
             });
