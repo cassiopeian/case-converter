@@ -5,6 +5,7 @@
  + [Introduction](#introduction)
  + [Features](#features)
     - [Invert Togglecase Text](#invert-togglecase-text)
+    - [Intuitive Title Case Functionality](#intuitive-title-case-functionality)
     - [Animation](#animation)
     - [Click to Copy Text](#click-to-copy-text)
  + [Favicon](#favicon)
