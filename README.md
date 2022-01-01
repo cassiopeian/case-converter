@@ -32,6 +32,10 @@
 
  > ShAlL i CoMpArE tHeE tO a SuMmEr's DaY? 
 
+ ### Intuitive Title Case Functionality
+
+ <img src="images/read-me/title-case-example.png" style="width: 75%">
+
  ### Animation
 
  <img src="images/read-me/big-plane.png" style="width: 75%">
