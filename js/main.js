@@ -240,6 +240,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'But' ||
                         titleCased[bb] == 'By' ||
                         titleCased[bb] == 'For' ||
+                        titleCased[bb] == 'From' ||
                         titleCased[bb] == 'In' ||
                         titleCased[bb] == 'Of' ||
                         titleCased[bb] == 'On' ||
