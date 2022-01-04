@@ -244,6 +244,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'For' ||
                         titleCased[bb] == 'From' ||
                         titleCased[bb] == 'In' ||
+                        titleCased[bb] == 'Into' ||
                         titleCased[bb] == 'Nor' ||
                         titleCased[bb] == 'Of' ||
                         titleCased[bb] == 'On' ||
