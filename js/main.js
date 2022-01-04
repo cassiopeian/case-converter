@@ -239,6 +239,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'At' ||
                         titleCased[bb] == 'But' ||
                         titleCased[bb] == 'By' ||
+                        titleCased[bb] == 'Down' ||
                         titleCased[bb] == 'For' ||
                         titleCased[bb] == 'From' ||
                         titleCased[bb] == 'In' ||
