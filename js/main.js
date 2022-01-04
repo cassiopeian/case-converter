@@ -233,6 +233,7 @@ $(document).ready(function() {
                 for (let bb = 1; bb < titleCased.length - 1; bb++) {
                     // and keep certain words lowercase 
                     if (titleCased[bb] == 'A' ||
+                        titleCased[bb] == 'Along' ||
                         titleCased[bb] == 'An' ||
                         titleCased[bb] == 'And' ||
                         titleCased[bb] == 'As' ||
