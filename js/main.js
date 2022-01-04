@@ -255,6 +255,18 @@ $(document).ready(function() {
                         titleCased[bb] = titleCased[bb].toLowerCase();
                     }
                 }
+
+                // loop through all but the last word
+                for (let up = 0; up < titleCased.length - 1; up++) {
+                    // check the word before the wanted word
+                    let leader = titleCased[up-1];
+                
+                    // if the wanted word is part of a verbal phrase
+                    if (leader == 'Hold' && titleCased[up] == 'on') {
+                        // capitalize the wanted word
+                        titleCased[up] = `${titleCased[up][0].toUpperCase()}${titleCased[up][1].toLowerCase()}`;
+                    }
+                }
                 
                 // remove array commas and display message
                 return titleCased.join(' ');
