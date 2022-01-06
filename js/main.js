@@ -258,6 +258,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'Or' ||
                         titleCased[bb] == 'The' ||
                         titleCased[bb] == 'To' ||
+                        titleCased[bb] == 'Up' ||
                         titleCased[bb] == 'With') {
                         titleCased[bb] = titleCased[bb].toLowerCase();
                     }
