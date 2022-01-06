@@ -197,6 +197,13 @@ $(document).ready(function() {
 
         // on mobile, close the soft keyboard
         $('#case-selection').focus();
+
+        // slide up, so the input and dropdown are in focus
+        if ($(window).width() < 415) {
+            $('html, body').animate({
+                scrollTop: $('#mobile-focus').offset().top
+            }, 500);
+        }
     });
 
     $('#dropdown button').on('touchstart click', function(event) {
