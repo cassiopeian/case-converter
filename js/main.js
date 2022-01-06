@@ -270,7 +270,8 @@ $(document).ready(function() {
                     let leader = titleCased[up-1];
                 
                     // if the wanted word is part of a verbal phrase
-                    if (leader == 'Hold' && titleCased[up] == 'on') {
+                    if (leader == 'Hold' && titleCased[up] == 'on' ||
+                        leader == 'Look' && titleCased[up] == 'up') {
                         // capitalize the wanted word
                         titleCased[up] = `${titleCased[up][0].toUpperCase()}${titleCased[up][1].toLowerCase()}`;
                     }
