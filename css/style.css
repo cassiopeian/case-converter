@@ -226,6 +226,9 @@ textarea:focus {
         background-color: rgb(189, 44, 0);
     }
 }
+#togglecase {
+    margin-bottom: 4rem;
+}
 .confirmed {
     letter-spacing: .1rem;
 }
