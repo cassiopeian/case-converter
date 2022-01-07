@@ -204,7 +204,6 @@ textarea:focus {
     display: none;
     position: absolute;
     z-index: 1;
-    margin-bottom: 2.8rem;
 }
 .options {
     font-size: 1.15rem;
