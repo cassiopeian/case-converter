@@ -269,11 +269,11 @@ $(document).ready(function() {
                     // check the word before the wanted word
                     let leader = titleCased[up-1];
                 
-                    // if the wanted word is part of a verbal phrase
+                    // if the wanted word is part of a phrasal verb
                     if (leader == 'Hold' && titleCased[up] == 'on' ||
                         leader == 'Look' && titleCased[up] == 'up') {
                         // capitalize the wanted word
-                        titleCased[up] = `${titleCased[up][0].toUpperCase()}${titleCased[up][1].toLowerCase()}`;
+                        titleCased[up] = titleCased[up][0].toUpperCase() + titleCased[up].substring(1);
                     }
                 }
                 
