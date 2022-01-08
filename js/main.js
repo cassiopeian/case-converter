@@ -271,7 +271,8 @@ $(document).ready(function() {
                 
                     // if the wanted word is part of a phrasal verb
                     if (leader == 'Hold' && titleCased[up] == 'on' ||
-                        leader == 'Look' && titleCased[up] == 'up') {
+                        leader == 'Look' && titleCased[up] == 'up' ||
+                        leader == 'Look' && titleCased[up] == 'down') {
                         // capitalize the wanted word
                         titleCased[up] = titleCased[up][0].toUpperCase() + titleCased[up].substring(1);
                     }
