@@ -70,7 +70,8 @@ textarea {
 #clipboard-wrapper {
     margin-top: 1rem;
 }
-#retoggle {
+#retoggle,
+#nota-bene {
     display: none;
 }
 .icon {
