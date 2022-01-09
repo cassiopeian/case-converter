@@ -256,6 +256,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'Of' ||
                         titleCased[bb] == 'On' ||
                         titleCased[bb] == 'Or' ||
+                        titleCased[bb] == 'Out' ||
                         titleCased[bb] == 'The' ||
                         titleCased[bb] == 'To' ||
                         titleCased[bb] == 'Up' ||
@@ -272,7 +273,8 @@ $(document).ready(function() {
                     // if the wanted word is part of a phrasal verb
                     if (leader == 'Bring' && titleCased[up] == 'down' ||
                         leader == 'Clean' && titleCased[up] == 'up' ||
-                        leader == 'Come' && titleCased[up] == 'from' || 
+                        leader == 'Come' && titleCased[up] == 'from' ||
+                        leader == 'Find' && titleCased[up] == 'out' || 
                         leader == 'Hold' && titleCased[up] == 'on' ||
                         leader == 'Look' && titleCased[up] == 'up' ||
                         leader == 'Look' && titleCased[up] == 'down') {
