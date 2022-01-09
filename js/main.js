@@ -270,7 +270,8 @@ $(document).ready(function() {
                     let leader = titleCased[up-1];
                 
                     // if the wanted word is part of a phrasal verb
-                    if (leader == 'Hold' && titleCased[up] == 'on' ||
+                    if (leader == 'Bring' && titleCased[up] == 'down' || 
+                        leader == 'Hold' && titleCased[up] == 'on' ||
                         leader == 'Look' && titleCased[up] == 'up' ||
                         leader == 'Look' && titleCased[up] == 'down') {
                         // capitalize the wanted word
