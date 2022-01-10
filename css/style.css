@@ -23,6 +23,7 @@ body {
 /* FONTS */
 
 textarea,
+#note-text,
 #copyright {
     font-family: lieberuth, sans-serif;
     font-weight: 400;
@@ -31,7 +32,8 @@ textarea,
 #clipboard-confirmation,
 #case-selection,
 .options,
-.confirmed {
+.confirmed,
+#note-title {
     font-family: typeka, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -321,6 +323,20 @@ textarea:focus {
 @keyframes drop-modal {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1;}
+}
+#title-case-note {
+    padding: 2rem;
+    background-color: rgb(255, 247, 242);
+}
+#note-title {
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(189, 13, 13);
+}
+#note-text {
+    font-size: 1.1rem;
+    letter-spacing: .04rem;
+    color: rgb(47, 47, 50);
 }
 
 /* FOOTER */
