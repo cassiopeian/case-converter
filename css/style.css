@@ -286,6 +286,43 @@ textarea:focus {
     100% {transform: rotate3d(1, 3, 5, 0deg); left: 50%; top: 10px;}
 }
 
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 20, 45, .7);
+}
+.popup {
+    position: relative;
+    background-image: url('../images/fish-scale-pattern.svg');
+    background-repeat: repeat;
+    background-size: 80px;
+    margin: auto;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    max-width: 550px;
+    -webkit-animation-name: drop-modal;
+    -webkit-animation-duration: 0.4s;
+    animation-name: drop-modal;
+    animation-duration: 0.4s;
+}
+@-webkit-keyframes drop-modal {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1;}
+}
+@keyframes drop-modal {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1;}
+}
+
 /* FOOTER */
 
 footer {
