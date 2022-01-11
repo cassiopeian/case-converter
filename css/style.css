@@ -343,6 +343,10 @@ textarea:focus {
     cursor: pointer;
 
 }
+#close-box:hover {
+    color: rgb(231, 131, 26);
+    background-color: rgb(249, 234, 225);
+}
 #note-title {
     font-size: 2rem;
     font-style: italic;
