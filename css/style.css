@@ -328,6 +328,14 @@ textarea:focus {
     padding: 2rem;
     background-color: rgb(255, 247, 242);
 }
+#close-box {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: right;
+    color: rgb(98, 43, 43);
+    margin: 0;
+}
 #note-title {
     font-size: 2rem;
     font-style: italic;
