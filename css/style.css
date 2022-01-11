@@ -332,9 +332,16 @@ textarea:focus {
     font-family: monospace;
     font-size: 1.5rem;
     font-style: normal;
-    text-align: right;
-    color: rgb(98, 43, 43);
+    color: rgb(138, 32, 0);
+    float: right;
     margin: 0;
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: inherit;
+    cursor: pointer;
+
 }
 #note-title {
     font-size: 2rem;
