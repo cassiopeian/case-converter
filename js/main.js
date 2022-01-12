@@ -332,6 +332,12 @@ $(document).ready(function() {
         }
     });
 
+    // when the nota bene icon is clicked
+    $('#nota-bene').on('click', function() {
+        // reveal the nota bene modal box
+        $('.modal').css('display', 'block');
+    });
+
     // when the note's X is clicked
     $('#close-box').on('click', function() {
         // hide the modal-box note
