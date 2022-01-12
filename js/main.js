@@ -332,6 +332,12 @@ $(document).ready(function() {
         }
     });
 
+    // when the note's X is clicked
+    $('#close-box').on('click', function() {
+        // hide the modal-box note
+        $('.modal').css('display', 'none');
+    });
+
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function(event) {
         // prevent focus from returning to clipboard icon
