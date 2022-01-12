@@ -357,6 +357,9 @@ textarea:focus {
     letter-spacing: .04rem;
     color: rgb(47, 47, 50);
 }
+.ital {
+    font-style: italic;
+}
 
 /* FOOTER */
 
