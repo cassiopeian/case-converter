@@ -300,6 +300,15 @@ $(document).ready(function() {
             $('#retoggle').css('display', 'none');
         }
 
+        // restrict the nota bene icon to the title case function
+        if (target.is('#title-case')) {
+            //reveal the nota bene button
+            $('#nota-bene').css('display', 'flex');
+        } else {
+            //hide the nota bene button
+            $('#nota-bene').css('display', 'none');
+        }
+
         // prevent event bubbling
         event.stopPropagation();
 
