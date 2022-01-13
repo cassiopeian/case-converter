@@ -272,6 +272,7 @@ $(document).ready(function() {
                 
                     // if the wanted word is part of a phrasal verb
                     if (leader == 'Bring' && titleCased[up] == 'down' ||
+                        leader == 'Carry' && titleCased[up] == 'on' ||
                         leader == 'Clean' && titleCased[up] == 'up' ||
                         leader == 'Come' && titleCased[up] == 'from' ||
                         leader == 'Find' && titleCased[up] == 'out' || 
