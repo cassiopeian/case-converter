@@ -271,7 +271,8 @@ $(document).ready(function() {
                     let leader = titleCased[up-1];
                 
                     // if the wanted word is part of a phrasal verb
-                    if (leader == 'Bring' && titleCased[up] == 'down' ||
+                    if (leader == 'Break' && titleCased[up] == 'up' ||
+                        leader == 'Bring' && titleCased[up] == 'down' ||
                         leader == 'Carry' && titleCased[up] == 'on' ||
                         leader == 'Clean' && titleCased[up] == 'up' ||
                         leader == 'Come' && titleCased[up] == 'from' ||
