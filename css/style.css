@@ -357,6 +357,8 @@ textarea:focus {
     font-size: 1.1rem;
     letter-spacing: .04rem;
     color: rgb(47, 47, 50);
+    max-height: 300px;
+    overflow: scroll;
 }
 .ital {
     font-style: italic;
