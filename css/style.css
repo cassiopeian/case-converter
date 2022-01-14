@@ -38,7 +38,8 @@ textarea,
     font-weight: 400;
     font-style: normal;
 }
-#converter-text {
+#converter-text,
+#see-more {
     font-family: capitol, sans-serif;
     font-style: normal;
 }
@@ -359,6 +360,13 @@ textarea:focus {
 }
 .ital {
     font-style: italic;
+}
+#see-more {
+    font-weight: bold;
+    font-style: italic;
+    white-space: nowrap;
+    color: rgb(231, 131, 26);
+    cursor: pointer;
 }
 
 /* FOOTER */
