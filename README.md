@@ -38,7 +38,7 @@
 
  <img src="images/read-me/title-case-example.png" style="width: 75%">
 
- Title cased text is mostly capitalized, but there are a few rules. This generator capitalizes the first and last (i.e., bookend) words in a given string of text, along with all major nouns and verbs. The text within the bookends is parsed for articles (e.g., *a*, *the*), conjunctions (e.g., *and*, *but*), and prepositions (e.g., *in*, *on*), which are lowercased.
+ Title cased text is mostly capitalized, but there are a few rules. This generator capitalizes the first and last (i.e., bookend) words in a given string of text, along with all nouns, verbs, pronouns, adjectives, and adverbs. The text within the bookends is parsed for articles (e.g., *a*, *the*), conjunctions (e.g., *and*, *but*), and prepositions (e.g., *in*, *on*), which are then set lowercase.
 
  ### Title Case Note
 
