@@ -396,6 +396,9 @@ footer {
 }
 
 @media only screen and (max-width: 415px) {
+
+    /* MAIN */
+    
     #clipboard-wrapper,
     #icon-wrapper,
     textarea {
@@ -406,6 +409,12 @@ footer {
     }
     #converter-text {
         font-size: 1.6rem;
+    }
+
+    /* MODAL */
+
+    .popup {
+        width: 90%;
     }
 }
 
