@@ -40,6 +40,8 @@
 
  Title cased text is mostly capitalized, but there are a few rules. This generator capitalizes the first and last (i.e., bookend) words in a given string of text, along with all nouns, verbs, pronouns, adjectives, and adverbs. The text within the bookends is parsed for articles (e.g., *a*, *the*), conjunctions (e.g., *and*, *but*), and prepositions (e.g., *in*, *on*), which are then set lowercase.
 
+ This dropdown option also reveals the function-specific *Sticky Note* button.
+
  ### Title Case Note
 
  <img src="images/read-me/nota-bene-example.png" style="width: 75%">
