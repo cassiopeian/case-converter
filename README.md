@@ -44,6 +44,8 @@
 
  <img src="images/read-me/nota-bene-example.png" style="width: 75%">
 
+ Capitalizing titles can be stressful! The *Nota bene* popup, triggered by the *Sticky Note* button, explains the methodology behind the Title Case function. The *See More* link, at the end of the popup, expands the note and details the limitations of the converter.
+
  ### Animation
 
  <img src="images/read-me/big-plane.png" style="width: 75%">
