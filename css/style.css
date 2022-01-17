@@ -23,7 +23,7 @@ body {
 /* FONTS */
 
 textarea,
-#note-text,
+.note-text,
 #copyright {
     font-family: lieberuth, sans-serif;
     font-weight: 400;
@@ -353,7 +353,7 @@ textarea:focus {
     font-style: italic;
     color: rgb(189, 13, 13);
 }
-#note-text {
+.note-text {
     font-size: 1.1rem;
     letter-spacing: .04rem;
     color: rgb(47, 47, 50);
