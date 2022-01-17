@@ -358,6 +358,22 @@ $(document).ready(function() {
         $('.modal').css('display', 'none');
     });
 
+    $('#see-more').on('click', function() {
+        let expandedNote = $('#expanded-note-text').css('display');
+
+        if (expandedNote == 'block') {
+            // hide the rest of the note
+            $('#expanded-note-text').css('display', 'none');
+            // reinstate the "see more" link
+            $('#see-more').html('See More &xrarr;');
+        } else if (expandedNote == 'none') {
+            // reveal the rest of the note
+            $('#expanded-note-text').css('display', 'block');
+            // replace the "see more" link with "see less"
+            $('#see-more').html('See Less &xrarr;');
+        }
+    });
+
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function(event) {
         // prevent focus from returning to clipboard icon
