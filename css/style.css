@@ -370,6 +370,9 @@ textarea:focus {
     color: rgb(231, 131, 26);
     cursor: pointer;
 }
+#expanded-note-text {
+    display: none;
+}
 
 /* FOOTER */
 
@@ -398,7 +401,7 @@ footer {
 @media only screen and (max-width: 415px) {
 
     /* MAIN */
-    
+
     #clipboard-wrapper,
     #icon-wrapper,
     textarea {
