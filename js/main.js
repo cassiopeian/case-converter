@@ -282,7 +282,8 @@ $(document).ready(function() {
                         leader == 'Look' && titleCased[up] == 'down' ||
                         leader == 'Turn' && titleCased[up] == 'down' ||
                         leader == 'Turn' && titleCased[up] == 'up' ||
-                        leader == 'Wake' && titleCased[up] == 'up') {
+                        leader == 'Wake' && titleCased[up] == 'up' ||
+                        leader == 'Work' && titleCased[up] == 'out') {
                         // capitalize the wanted word
                         titleCased[up] = titleCased[up][0].toUpperCase() + titleCased[up].substring(1);
                     }
