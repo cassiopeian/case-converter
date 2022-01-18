@@ -280,6 +280,7 @@ $(document).ready(function() {
                         leader == 'Hold' && titleCased[up] == 'on' ||
                         leader == 'Look' && titleCased[up] == 'up' ||
                         leader == 'Look' && titleCased[up] == 'down' ||
+                        leader == 'See' && titleCased[up] == 'to' ||
                         leader == 'Turn' && titleCased[up] == 'down' ||
                         leader == 'Turn' && titleCased[up] == 'up' ||
                         leader == 'Wake' && titleCased[up] == 'up' ||
