@@ -39,7 +39,8 @@ textarea,
     font-style: normal;
 }
 #converter-text,
-#see-more {
+#see-more,
+.note-subtitle {
     font-family: capitol, sans-serif;
     font-style: normal;
 }
@@ -374,6 +375,11 @@ textarea:focus {
 }
 #expanded-note-text {
     display: none;
+}
+.note-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(35, 35, 37);
 }
 
 /* FOOTER */
