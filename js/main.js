@@ -368,11 +368,15 @@ $(document).ready(function() {
             $('#expanded-note-text').css('display', 'none');
             // reinstate the "see more" link
             $('#see-more').html('See More &xrarr;');
+            // hide the scroll chevron
+            $('#chevron-wrapper').slideUp(400);
         } else if (expandedNote == 'none') {
             // reveal the rest of the note
             $('#expanded-note-text').css('display', 'block');
             // replace the "see more" link with "see less"
             $('#see-more').html('See Less &xrarr;');
+            // show the scroll chevron
+            $('#chevron-wrapper').slideDown(400);
         }
     });
 
