@@ -381,6 +381,10 @@ textarea:focus {
     font-weight: bold;
     color: rgb(35, 35, 37);
 }
+#chevron-wrapper {
+    display: none;
+    background-color: rgb(255, 247, 242);
+}
 
 /* FOOTER */
 
