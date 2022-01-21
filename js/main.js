@@ -373,6 +373,8 @@ $(document).ready(function() {
             // hide the scroll chevron
             $('#chevron-wrapper').slideUp(400);
         } else if (expandedNote == 'none') {
+            // ensure the chevron points downward
+            $('#chevron').removeClass('rotated-chevron');
             // reveal the rest of the note
             $('#expanded-note-text').css('display', 'block');
             // replace the "see more" link with "see less"
