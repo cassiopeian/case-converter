@@ -254,6 +254,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'Into' ||
                         titleCased[bb] == 'Nor' ||
                         titleCased[bb] == 'Of' ||
+                        titleCased[bb] == 'Off' ||
                         titleCased[bb] == 'On' ||
                         titleCased[bb] == 'Or' ||
                         titleCased[bb] == 'Out' ||
@@ -276,7 +277,8 @@ $(document).ready(function() {
                         leader == 'Carry' && titleCased[up] == 'on' ||
                         leader == 'Clean' && titleCased[up] == 'up' ||
                         leader == 'Come' && titleCased[up] == 'from' ||
-                        leader == 'Find' && titleCased[up] == 'out' || 
+                        leader == 'Find' && titleCased[up] == 'out' ||
+                        leader == 'Hold' && titleCased[up] == 'off' || 
                         leader == 'Hold' && titleCased[up] == 'on' ||
                         leader == 'Look' && titleCased[up] == 'up' ||
                         leader == 'Look' && titleCased[up] == 'down' ||
