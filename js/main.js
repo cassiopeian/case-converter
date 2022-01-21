@@ -240,6 +240,7 @@ $(document).ready(function() {
                 for (let bb = 1; bb < titleCased.length - 1; bb++) {
                     // and keep certain words lowercase 
                     if (titleCased[bb] == 'A' ||
+                        titleCased[bb] == 'Across' ||
                         titleCased[bb] == 'Along' ||
                         titleCased[bb] == 'An' ||
                         titleCased[bb] == 'And' ||
@@ -278,6 +279,7 @@ $(document).ready(function() {
                         leader == 'Clean' && titleCased[up] == 'up' ||
                         leader == 'Come' && titleCased[up] == 'from' ||
                         leader == 'Find' && titleCased[up] == 'out' ||
+                        leader == 'Get' && titleCased[up] == 'across' ||
                         leader == 'Hold' && titleCased[up] == 'off' || 
                         leader == 'Hold' && titleCased[up] == 'on' ||
                         leader == 'Look' && titleCased[up] == 'up' ||
