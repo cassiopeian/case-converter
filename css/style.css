@@ -384,7 +384,7 @@ textarea:focus {
 #chevron-wrapper {
     display: none;
     background-color: rgb(255, 247, 242);
-    padding-bottom: .5rem;
+    padding: 1rem 0;
 }
 #chevron-bg {
     display: flex;
