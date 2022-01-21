@@ -380,6 +380,23 @@ $(document).ready(function() {
         }
     });
 
+    $('#note-text-wrapper').on('scroll', function() {
+        let noteWrapper = document.getElementById('note-text-wrapper');
+
+        console.log(`scrollHeight: ${noteWrapper.scrollHeight}`);
+        console.log(`scrollTop: ${noteWrapper.scrollTop}`);
+        console.log(`clientHeight: ${noteWrapper.clientHeight}`);
+
+        // if the note has been scrolled to the bottom
+        if (noteWrapper.scrollHeight - Math.abs(noteWrapper.scrollTop) === noteWrapper.clientHeight) {
+            // point the chevron upward
+            $('#chevron').addClass('rotated-chevron');
+        } else {
+            // point the chevron downward
+            $('#chevron').removeClass('rotated-chevron');
+        }
+    });
+
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function(event) {
         // prevent focus from returning to clipboard icon
