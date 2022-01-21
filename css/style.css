@@ -327,7 +327,7 @@ textarea:focus {
     to {top: 0; opacity: 1;}
 }
 #title-case-note {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     background-color: rgb(255, 247, 242);
 }
 #close-box {
