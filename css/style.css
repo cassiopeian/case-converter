@@ -355,7 +355,7 @@ textarea:focus {
     color: rgb(189, 13, 13);
 }
 #note-text-wrapper {
-    max-height: 300px;
+    max-height: 310px;
     overflow: scroll;
 }
 .note-text {
