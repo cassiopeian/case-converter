@@ -393,9 +393,12 @@ textarea:focus {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background-color: rgb(226, 90, 40);
+    background-color: rgb(189, 13, 13);
     margin: 0 auto;
     cursor: pointer;
+}
+#chevron-bg:active {
+    background-color: rgba(189, 13, 13, .6);
 }
 #chevron {
     width: 20px;
