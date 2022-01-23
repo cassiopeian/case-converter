@@ -382,6 +382,9 @@ textarea:focus {
     font-weight: bold;
     color: rgb(35, 35, 37);
 }
+table {
+    padding-left: 1.5rem;
+}
 .quote-color {
     padding: .2rem;
     background-color: rgb(231, 131, 26);
