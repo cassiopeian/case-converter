@@ -358,7 +358,8 @@ textarea:focus {
     max-height: 310px;
     overflow: scroll;
 }
-.note-text {
+.note-text,
+.quote-text {
     font-size: 1.1rem;
     letter-spacing: .04rem;
     color: rgb(47, 47, 50);
@@ -380,6 +381,9 @@ textarea:focus {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(35, 35, 37);
+}
+.quote-text {
+    padding-left: .5rem;
 }
 #chevron-wrapper {
     display: none;
