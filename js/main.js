@@ -369,6 +369,8 @@ $(document).ready(function() {
         let expandedNote = $('#expanded-note-text').css('display');
 
         if (expandedNote == 'block') {
+            // add padding to all sides of the note
+            $('#title-case-note').css('padding','2rem');
             // hide the rest of the note
             $('#expanded-note-text').css('display', 'none');
             // reinstate the "see more" link
@@ -376,6 +378,8 @@ $(document).ready(function() {
             // hide the scroll chevron
             $('#chevron-wrapper').slideUp(400);
         } else if (expandedNote == 'none') {
+            // remove the note's bottom padding
+            $('#title-case-note').css('padding','2rem 2rem 0 2rem');
             // ensure the chevron points downward
             $('#chevron').removeClass('rotated-chevron');
             // reveal the rest of the note
