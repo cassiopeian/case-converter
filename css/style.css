@@ -395,6 +395,7 @@ textarea:focus {
     border-radius: 100%;
     background-color: rgb(226, 90, 40);
     margin: 0 auto;
+    cursor: pointer;
 }
 #chevron {
     width: 20px;
