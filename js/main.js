@@ -2,6 +2,7 @@ $(document).ready(function() {
     let canConvert = true;
     let upThenDown;
     let spaceIndices = [];
+    let noteWrapper = document.getElementById('note-text-wrapper');
 
     // if the user makes a selection
     function blankAlert() {
@@ -387,12 +388,6 @@ $(document).ready(function() {
     });
 
     $('#note-text-wrapper').on('scroll', function() {
-        let noteWrapper = document.getElementById('note-text-wrapper');
-
-        console.log(`scrollHeight: ${noteWrapper.scrollHeight}`);
-        console.log(`scrollTop: ${noteWrapper.scrollTop}`);
-        console.log(`clientHeight: ${noteWrapper.clientHeight}`);
-
         // if the note has been scrolled to the bottom
         if (noteWrapper.scrollHeight - Math.abs(noteWrapper.scrollTop) === noteWrapper.clientHeight) {
             // point the chevron upward
@@ -400,6 +395,20 @@ $(document).ready(function() {
         } else {
             // point the chevron downward
             $('#chevron').removeClass('rotated-chevron');
+        }
+    });
+
+    $('#chevron-bg').on('click', function() {
+        if ($('#chevron').hasClass('rotated-chevron')) {
+            // scroll all the way back to top
+            $('#note-text-wrapper').animate({scrollTop: 0}, 400);
+        } else {
+            // scroll down incrementally
+            noteWrapper.scrollBy({
+                top: 100,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
     });
 
