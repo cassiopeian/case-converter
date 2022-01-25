@@ -395,10 +395,6 @@ $(document).ready(function() {
         // add an allowance, as scrollHeight is off by 1px at certain screen widths
         let adjustedClientHeight = noteWrapper.clientHeight + 1 || noteWrapper.clientHeight; 
 
-        console.log(`scrollHeight: ${noteWrapper.scrollHeight}`);
-        console.log(`scrollTop: ${noteWrapper.scrollTop}`);
-        console.log(`clientHeight: ${noteWrapper.clientHeight}`);
-
         // if the note has been scrolled to the bottom
         if (noteWrapper.scrollHeight - Math.abs(noteWrapper.scrollTop) === adjustedClientHeight) {
             // point the chevron upward
