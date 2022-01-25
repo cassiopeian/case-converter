@@ -7,6 +7,7 @@
     - [Invert Togglecase Text](#invert-togglecase-text)
     - [Intuitive Title Case Functionality](#intuitive-title-case-functionality)
     - [Title Case Note](#title-case-note)
+    - [Expanded Note](#expanded-note)
     - [Animation](#animation)
     - [Click to Copy Text](#click-to-copy-text)
  + [Favicon](#favicon)
