@@ -52,6 +52,8 @@
 
  <img src="images/read-me/expanded-note.png" style="width: 75%">
 
+ The extended note features a chevron *Scroll* button, to indicate which direction the content can be scrolled. When the chevron points downward, the button can be used to scroll incrementally, and when it points upward, it can be clicked to return to the top of the note.
+
  ### Animation
 
  <img src="images/read-me/big-plane.png" style="width: 75%">
