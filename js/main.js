@@ -285,6 +285,7 @@ $(document).ready(function() {
                         leader == 'Get' && titleCased[up] == 'across' ||
                         leader == 'Hold' && titleCased[up] == 'off' || 
                         leader == 'Hold' && titleCased[up] == 'on' ||
+                        leader == 'Hold' && titleCased[up] == 'out' ||
                         leader == 'Look' && titleCased[up] == 'up' ||
                         leader == 'Look' && titleCased[up] == 'down' ||
                         leader == 'Miss' && titleCased[up] == 'out' ||
