@@ -245,6 +245,7 @@ $(document).ready(function() {
                         titleCased[bb] == 'Along' ||
                         titleCased[bb] == 'An' ||
                         titleCased[bb] == 'And' ||
+                        titleCased[bb] == 'Apart' ||
                         titleCased[bb] == 'As' ||
                         titleCased[bb] == 'At' ||
                         titleCased[bb] == 'But' ||
@@ -279,6 +280,7 @@ $(document).ready(function() {
                         leader == 'Carry' && titleCased[up] == 'on' ||
                         leader == 'Clean' && titleCased[up] == 'up' ||
                         leader == 'Come' && titleCased[up] == 'from' ||
+                        leader == 'Fall' && titleCased[up] == 'apart' ||
                         leader == 'Find' && titleCased[up] == 'out' ||
                         leader == 'Get' && titleCased[up] == 'across' ||
                         leader == 'Hold' && titleCased[up] == 'off' || 
