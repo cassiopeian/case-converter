@@ -75,7 +75,7 @@
 
 ## Inspiration 
 
- It TaKeS fOrEvEr to type in togglecase on mobile devices. I knew there were built-in JavaScript methods to transform text to uppercase and lowercase, so I wanted to challenge myself to create a togglecase converter. 
+ It TaKeS fOrEvEr to type in togglecase on mobile devices. I knew the built-in JavaScript methods `.toUpperCase()` and `.toLowerCase()` could easily transform strings, so I wanted to challenge myself to create a togglecase converter for texting. After that, I made the title case function for TBR book lists.
 
 ## Tech Specs
 
