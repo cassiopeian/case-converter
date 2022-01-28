@@ -33,7 +33,7 @@ textarea,
 #case-selection,
 .options,
 .confirmed,
-#note-title {
+h1 {
     font-family: typeka, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -349,7 +349,7 @@ textarea:focus {
     color: rgb(231, 131, 26);
     background-color: rgb(249, 234, 225);
 }
-#note-title {
+h1 {
     font-size: 2rem;
     font-style: italic;
     color: rgb(189, 13, 13);
