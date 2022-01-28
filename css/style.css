@@ -40,7 +40,7 @@ h1 {
 }
 #converter-text,
 #see-more,
-.note-subtitle {
+h2 {
     font-family: capitol, sans-serif;
     font-style: normal;
 }
@@ -377,7 +377,7 @@ h1 {
 #expanded-note-text {
     display: none;
 }
-.note-subtitle {
+h2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(35, 35, 37);
