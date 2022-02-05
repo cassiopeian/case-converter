@@ -398,7 +398,7 @@ $(document).ready(function() {
 
     $('#note-text-wrapper').on('scroll', function() {
         // add an allowance, as scrollHeight is off by 1px at certain screen widths
-        let adjustedClientHeight = noteWrapper.clientHeight + 1 || noteWrapper.clientHeight; 
+        let adjustedClientHeight = noteWrapper.clientHeight || noteWrapper.clientHeight + 1;
 
         // if the note has been scrolled to the bottom
         if (noteWrapper.scrollHeight - Math.abs(noteWrapper.scrollTop) === adjustedClientHeight) {
