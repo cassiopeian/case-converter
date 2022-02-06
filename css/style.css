@@ -404,6 +404,9 @@ table {
     width: 35%;
     margin: 0 1.3rem;
 }
+.capitalized-phrase {
+    text-transform: capitalize;
+}
 #chevron-wrapper {
     display: none;
     background-color: rgb(255, 247, 242);
