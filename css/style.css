@@ -392,6 +392,18 @@ table {
 .quote-text {
     padding-left: .5rem;
 }
+#phrases-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+#phrases-container > div {
+    width: 35%;
+    margin: 0 1.3rem;
+}
 #chevron-wrapper {
     display: none;
     background-color: rgb(255, 247, 242);
