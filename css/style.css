@@ -458,6 +458,12 @@ footer {
     }
 }
 
+@media only screen and (max-width: 650px) {
+    #phrases-container > div {
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 415px) {
 
     /* MAIN */
