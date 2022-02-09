@@ -398,7 +398,7 @@ table {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
 }
 #phrases-container > div {
