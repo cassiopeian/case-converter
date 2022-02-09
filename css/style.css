@@ -408,6 +408,9 @@ table {
 .capitalized-phrase {
     text-transform: capitalize;
 }
+.split {
+    margin-bottom: 0;
+}
 #chevron-wrapper {
     display: none;
     background-color: rgb(255, 247, 242);
