@@ -410,7 +410,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#chevron-bg').on('click', function() {
+    $('#chevron-bg').on('touchstart click', function() {
         if ($('#chevron').hasClass('rotated-chevron')) {
             // scroll all the way back to top
             $('#note-text-wrapper').animate({scrollTop: 0}, 400);
