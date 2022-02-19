@@ -359,7 +359,7 @@ $(document).ready(function() {
     });
 
     // when the nota bene icon is clicked
-    $('#nota-bene').on('click', function() {
+    $('#nota-bene').on('touchstart click', function() {
         // reveal the nota bene modal box
         $('.modal').css('display', 'block');
     });
