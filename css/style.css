@@ -490,6 +490,9 @@ footer {
     .popup {
         width: 90%;
     }
+    #title-case-note {
+        padding: 1.6rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
