@@ -365,7 +365,7 @@ $(document).ready(function() {
     });
 
     // when the note's X is clicked
-    $('#close-box').on('click', function() {
+    $('#close-box').on('touchstart click', function() {
         // hide the modal-box note
         $('.modal').css('display', 'none');
     });
