@@ -370,7 +370,7 @@ $(document).ready(function() {
         $('.modal').css('display', 'none');
     });
 
-    $('#see-more').on('click', function() {
+    $('#see-more').on('touchstart click', function() {
         let expandedNote = $('#expanded-note-text').css('display');
 
         if (expandedNote == 'block') {
