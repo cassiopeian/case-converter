@@ -496,6 +496,10 @@ footer {
     h1 {
         margin: 1.5rem 0 0 0;
     }
+    .note-text,
+    .quote-text {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
