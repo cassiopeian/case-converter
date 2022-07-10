@@ -443,7 +443,7 @@ footer {
     margin-top: auto;
     padding: .7rem 1rem;
     background-color: rgba(15, 20, 45, .5);
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 #copyright {
