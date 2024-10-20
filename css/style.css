@@ -137,6 +137,7 @@ textarea {
     letter-spacing: .05rem;
     color: rgb(82, 82, 82);
     background-color: rgb(236, 236, 236);
+    caret-color: rgb(255, 87, 34);
     height: 160px;
     border: none;
     border-radius: 25px;
