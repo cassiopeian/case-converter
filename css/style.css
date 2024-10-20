@@ -149,6 +149,9 @@ textarea:focus {
     outline: 1px solid rgba(28, 33, 62, 0.14);
     box-shadow: 0px 0px 5px 4px rgb(90, 231, 189);
 }
+textarea::selection {
+    background: rgba(255, 167, 38, 0.43);
+}
 .fade-in {
     -webkit-animation: fadeText 1.5s ease-in;
     animation: fadeText 1.5s ease-in;
