@@ -429,10 +429,6 @@ $(document).ready(function() {
         // prevent focus from returning to clipboard icon
         event.preventDefault();
 
-        // select/highlight the textarea content 
-        $('textarea').focus();
-        $('textarea').select();
-
         // copy the textarea content to the clipboard
         navigator.clipboard.writeText($('textarea').val());
 
