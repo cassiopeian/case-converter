@@ -426,11 +426,10 @@ $(document).ready(function() {
 
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function(event) {
-        // prevent focus from returning to clipboard icon
-        event.preventDefault();
-
-        // copy the textarea content to the clipboard
-        navigator.clipboard.writeText($('textarea').val());
+        if (navigator.clipboard) {
+            // copy the textarea content to the clipboard
+            navigator.clipboard.writeText($('textarea').val());
+        }
 
         // display the "copied to clipboard" notice
         $('#clipboard-notice').css('visibility', 'visible');
