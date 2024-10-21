@@ -426,9 +426,11 @@ $(document).ready(function() {
 
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function(event) {
+        let copiedText = $('textarea').val();
+
         if (navigator.clipboard) {
             // copy the textarea content to the clipboard
-            navigator.clipboard.writeText($('textarea').val());
+            navigator.clipboard.writeText(copiedText);
         }
 
         // display the "copied to clipboard" notice
