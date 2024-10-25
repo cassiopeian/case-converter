@@ -430,15 +430,19 @@ $(document).ready(function() {
 
         if (navigator.clipboard) {
             // copy the textarea content to the clipboard
-            navigator.clipboard.writeText(copiedText);
+            navigator.clipboard.writeText(copiedText)
+            .then(function() {
+                // display the "copied to clipboard" notice
+                $('#clipboard-notice').css('visibility', 'visible');
+
+                // and then hide the notice again
+                setTimeout(function() {
+                    $('#clipboard-notice').css('visibility', 'hidden');
+                }, 2000);
+            })
+            .catch(function() {
+                alert('Hmm, something went wrong...');
+            });
         }
-
-        // display the "copied to clipboard" notice
-        $('#clipboard-notice').css('visibility', 'visible');
-
-        // and then hide the notice again
-        setTimeout(function() {
-            $('#clipboard-notice').css('visibility', 'hidden');
-        }, 2000);
     });
 });
