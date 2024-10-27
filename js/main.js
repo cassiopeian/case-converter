@@ -6,8 +6,8 @@ $(document).ready(function() {
 
     // if the user makes a selection
     function blankAlert() {
-        // and the textarea is empty
-        if ($('textarea').val().length === 0) {
+        // and the text input is empty
+        if ($('#textarea').text().length === 0) {
             // prompt the user to input text
             alert('Add some text!');
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
     };
 
     function confirmSelection() {
-        // if there is text in the textarea
+        // if there is text in the text input
         if (canConvert === true) {
             // update "select case" placeholder with selected case
             $('#case-selection span').html($(this).html()).addClass('confirmed');
@@ -74,9 +74,9 @@ $(document).ready(function() {
         upThenDown = true;
 
         // convert all textarea content to togglecase
-        $('textarea').val(function() {
+        $('#textarea').text(function() {
             // split the characters in the user's input text 
-            let text = $('textarea').val().split('');
+            let text = $('#textarea').text().split('');
 
             // loop backward through text
             for (let x = text.length - 1; x >= 0; x--) {
@@ -122,9 +122,9 @@ $(document).ready(function() {
         upThenDown = false;
 
         // convert all textarea content to togglecase
-        $('textarea').val(function() {
+        $('#textarea').text(function() {
             // split the characters in the user's input text 
-            let text = $('textarea').val().split('');
+            let text = $('#textarea').text().split('');
 
             // loop backward through text
             for (let x = text.length - 1; x >= 0; x--) {
@@ -210,21 +210,23 @@ $(document).ready(function() {
     $('#dropdown button').on('touchstart click', function(event) {
         // make each dropdown button a potential target
         let target = $(event.target);
+        let textareaText = $('#textarea').text();
+
         if (target.is('#lowercase')) {
             // convert all textarea content to lowercase
-            $('textarea').val(function() {
-                return this.value.toLowerCase();
+            $('#textarea').text(function() {
+                return textareaText.toLowerCase();
             });
         } else if (target.is('#uppercase')) {
             // convert all textarea content to uppercase
-            $('textarea').val(function() {
-                return this.value.toUpperCase();
+            $('#textarea').text(function() {
+                return textareaText.toUpperCase();
             });
         } else if (target.is('#title-case')) {
             // convert all textarea content to title case
-            $('textarea').val(function() {
+            $('#textarea').text(function() {
                 // split the string into words
-                let splitWords = $('textarea').val().split(' ');
+                let splitWords = $('#textarea').text().split(' ');
     
                 // to capitalize the first letter of each word
                 let titleCased = splitWords.map(word => {
@@ -330,11 +332,11 @@ $(document).ready(function() {
         event.stopPropagation();
 
         // activate the keyframes animation that makes the text fade in
-        $('textarea').addClass('fade-in');
+        $('#textarea').addClass('fade-in');
 
         // reset the fade-in animation 
         setTimeout(function() {
-            $('textarea').removeClass('fade-in');
+            $('#textarea').removeClass('fade-in');
         }, 1050);
 
         rotateArrow();
@@ -426,7 +428,7 @@ $(document).ready(function() {
 
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', function() {
-        let copiedText = $('textarea').val();
+        let copiedText = $('#textarea').text();
 
         if (navigator.clipboard) {
             // copy the textarea content to the clipboard
