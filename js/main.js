@@ -426,8 +426,7 @@ $(document).ready(function() {
         }
     });
 
-    // when the user clicks on the copy button
-    $('#clipboard').on('touchstart click', function() {
+    async function copyToClipboard() {
         let copiedText = $('#textarea').text();
 
         if (navigator.clipboard) {
@@ -446,5 +445,8 @@ $(document).ready(function() {
                 alert('Hmm, something went wrong...');
             });
         }
-    });
+    };
+
+    // when the user clicks on the copy button
+    $('#clipboard').on('touchstart click', copyToClipboard);
 });
