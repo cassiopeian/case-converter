@@ -449,4 +449,7 @@ $(document).ready(function() {
 
     // when the user clicks on the copy button
     $('#clipboard').on('touchstart click', copyToClipboard);
+
+    // set copyright year
+    $('#copyright-year').html(new Date().getFullYear());
 });
