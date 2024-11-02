@@ -427,19 +427,12 @@ $(document).ready(function() {
     });
 
     async function copyToClipboard() {
-        let userText = $('.textarea').text();
-        let copiedText = $('<p class="copied-text"></p>');
+        let copiedText = $('.textarea').text();
 
         if (navigator.clipboard) {
-            // populate the temporary p tag with user text
-            $(copiedText).text(userText);
-            // append the temporary p tag to the body
-            $('body').append(copiedText);
             // copy the text to the clipboard
-            navigator.clipboard.writeText(copiedText.text())
+            navigator.clipboard.writeText(copiedText)
             .then(function() {
-                // remove the temporary p tag
-                $('body').remove(copiedText);
                 // display the "copied to clipboard" notice
                 $('#clipboard-notice').css('visibility', 'visible');
 
