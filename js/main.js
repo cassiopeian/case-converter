@@ -7,7 +7,7 @@ $(document).ready(function() {
     // if the user makes a selection
     function blankAlert() {
         // and the text input is empty
-        if ($('#textarea').text().length === 0) {
+        if ($('.textarea').text().length === 0) {
             // prompt the user to input text
             alert('Add some text!');
 
@@ -74,9 +74,9 @@ $(document).ready(function() {
         upThenDown = true;
 
         // convert all textarea content to togglecase
-        $('#textarea').text(function() {
+        $('.textarea').text(function() {
             // split the characters in the user's input text 
-            let text = $('#textarea').text().split('');
+            let text = $('.textarea').text().split('');
 
             // loop backward through text
             for (let x = text.length - 1; x >= 0; x--) {
@@ -122,9 +122,9 @@ $(document).ready(function() {
         upThenDown = false;
 
         // convert all textarea content to togglecase
-        $('#textarea').text(function() {
+        $('.textarea').text(function() {
             // split the characters in the user's input text 
-            let text = $('#textarea').text().split('');
+            let text = $('.textarea').text().split('');
 
             // loop backward through text
             for (let x = text.length - 1; x >= 0; x--) {
@@ -210,23 +210,23 @@ $(document).ready(function() {
     $('#dropdown button').on('touchstart click', function(event) {
         // make each dropdown button a potential target
         let target = $(event.target);
-        let textareaText = $('#textarea').text();
+        let textareaText = $('.textarea').text();
 
         if (target.is('#lowercase')) {
             // convert all textarea content to lowercase
-            $('#textarea').text(function() {
+            $('.textarea').text(function() {
                 return textareaText.toLowerCase();
             });
         } else if (target.is('#uppercase')) {
             // convert all textarea content to uppercase
-            $('#textarea').text(function() {
+            $('.textarea').text(function() {
                 return textareaText.toUpperCase();
             });
         } else if (target.is('#title-case')) {
             // convert all textarea content to title case
-            $('#textarea').text(function() {
+            $('.textarea').text(function() {
                 // split the string into words
-                let splitWords = $('#textarea').text().split(' ');
+                let splitWords = $('.textarea').text().split(' ');
     
                 // to capitalize the first letter of each word
                 let titleCased = splitWords.map(word => {
@@ -332,11 +332,11 @@ $(document).ready(function() {
         event.stopPropagation();
 
         // activate the keyframes animation that makes the text fade in
-        $('#textarea').addClass('fade-in');
+        $('.textarea').addClass('fade-in');
 
         // reset the fade-in animation 
         setTimeout(function() {
-            $('#textarea').removeClass('fade-in');
+            $('.textarea').removeClass('fade-in');
         }, 1050);
 
         rotateArrow();
@@ -427,12 +427,19 @@ $(document).ready(function() {
     });
 
     async function copyToClipboard() {
-        let copiedText = $('#textarea').text();
+        let userText = $('.textarea').text();
+        let copiedText = $('<p class="copied-text"></p>');
 
         if (navigator.clipboard) {
-            // copy the textarea content to the clipboard
-            navigator.clipboard.writeText(copiedText)
+            // populate the temporary p tag with user text
+            $(copiedText).text(userText);
+            // append the temporary p tag to the body
+            $('body').append(copiedText);
+            // copy the text to the clipboard
+            navigator.clipboard.writeText(copiedText.text())
             .then(function() {
+                // remove the temporary p tag
+                $('body').remove(copiedText);
                 // display the "copied to clipboard" notice
                 $('#clipboard-notice').css('visibility', 'visible');
 
