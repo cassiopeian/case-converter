@@ -200,7 +200,7 @@ $(document).ready(function() {
         $('#case-selection').focus();
 
         // slide up, so the input and dropdown are in focus
-        if ($(window).width() < 415) {
+        if ($(window).width() < 440) {
             $('html, body').animate({
                 scrollTop: $('#mobile-focus').offset().top
             }, 500);
